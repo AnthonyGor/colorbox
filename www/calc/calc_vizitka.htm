@@ -1,0 +1,99 @@
+<br />
+  <script type='text/javascript'>
+$(document).ready(function(){
+
+  $('#format1').css('color','#ffffff');
+  $('#format2').css('color','#000000');
+  $('.format2').css('background-color','#ffffff');
+  $('.format1').css('background-color','#4B5E7C');
+  $('#ed_format').val('1');
+
+
+  $('#format1').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format2').css('color','#000000');
+    $('.format2').css('background-color','#ffffff');
+    $('.format1').css('background-color','#4B5E7C');
+    $('#ed_format').val('1');
+    return false;
+  });
+  $('#format2').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format1').css('color','#000000');
+    $('.format1').css('background-color','#ffffff');
+    $('.format2').css('background-color','#4B5E7C');
+    $('#ed_format').val('2');
+    return false;
+  });
+  
+  $('select[@name=paper]').change(function()
+  {
+    var paper = $('select[@name=paper] option:selected').val();
+    
+    //alert(paper);
+    
+    if ( (3 == paper) || (4 == paper))
+    {
+      $('select[@name=lamin] option[@value=2]').attr('selected', 'yes');
+      $('select[@name=lamin]').attr('disabled', 'yes');
+    }
+    else
+      $('select[@name=lamin]').removeAttr('disabled');
+      
+  });
+  
+});
+</script>
+<div class='fl_l'><p class='captio'>Бумага&nbsp;&nbsp;</p></div>
+<div class='fl_r'>
+                        <SELECT name='paper' class='paper fnt'>
+						    <OPTION value='1' selected>Silver image 300 гр/м2</OPTION>
+							<OPTION value='2'>Colotech 300 гр.м2</OPTION>
+							<OPTION value='3'>Лен ивобель 300 гр.м2</OPTION>
+							<OPTION value='4'>Лен слоновая кость 300 гр.м2</OPTION>
+					    </select>
+</div>
+<div class='clear'></div>
+<br />
+<div class='fl_l'><p class='formatvizitki'>Формат&nbsp;&nbsp;</p><input 
+name="formatvizitki" id='ed_format' type="hidden" value="1"></div>
+<div class='fl_l format1'><a href='' id='format1'>50 X 90 мм</a></div>
+<div class='fl_l format2'><a href='' id='format2'>55 X 85 мм</a></div>
+<div class='clear'></div>
+<br />
+<div class='fl_l'>
+  <p class='captio'>Цветность</p>
+  <SELECT name='color' class='paper_colors fnt'>
+	<OPTION value='3' selected>4+0</OPTION>
+	<OPTION value='1'>4+4</OPTION>
+  </select>
+</div>
+
+<div class='fl_r'>
+  <p class='captio'>Тираж</p>
+  <SELECT name='count' class='paper_colors fnt'>
+	<OPTION value='50' selected>50</OPTION>
+	<OPTION value='100'>100</OPTION>
+	<OPTION value='200'>200</OPTION>
+	<OPTION value='300'>300</OPTION>
+	<OPTION value='400'>400</OPTION>
+	<OPTION value='500'>500</OPTION>
+	<OPTION value='600'>600</OPTION>
+	<OPTION value='700'>700</OPTION>
+	<OPTION value='800'>800</OPTION>
+	<OPTION value='900'>900</OPTION>
+	<OPTION value='1000'>1000</OPTION>
+  </select>
+</div>
+<div class='clear'></div>
+<br />
+<div class='fl_l'>
+  <p class='captio'>Ламинация</p>
+</div>
+<div class='fl_r'>
+  <SELECT name='lamin' class='paper_colors fnt'>
+	<OPTION value='2' selected>да</OPTION>
+	<OPTION value='1'>нет</OPTION>
+  </select>
+</div>
+<div class='clear'></div>

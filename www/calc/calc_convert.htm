@@ -1,0 +1,77 @@
+<br />
+  <script type='text/javascript'>
+$(document).ready(function(){
+
+  $('#format1').css('color','#ffffff');
+  $('.format1').css('background-color','#4B5E7C');
+  $('#format2').css('color','#000000');
+  $('#format2').css('color','#000000');
+  $('.format3').css('background-color','#ffffff');
+  $('.format3').css('background-color','#ffffff');
+  $('#ed_format').val('1');
+
+  $('#format1').click(function(){
+    $(this).css('color','#ffffff');
+    $('.format1').css('background-color','#4B5E7C');
+    $('#format2').css('color','#000000');
+    $('.format2').css('background-color','#ffffff');
+    $('#format3').css('color','#000000');
+    $('.format3').css('background-color','#ffffff');
+    $('#ed_format').val('1');
+    return false;
+  });
+  $('#format2').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format1').css('color','#000000');
+    $('.format1').css('background-color','#ffffff');
+    $('.format2').css('background-color','#4B5E7C');
+    $('#format3').css('color','#000000');
+    $('.format3').css('background-color','#ffffff');
+      $('#ed_format').val('2');
+    return false;
+  });
+  $('#format3').click(function(){
+    $(this).css('color','#ffffff');
+    $('.format3').css('background-color','#4B5E7C');
+    $('#format2').css('color','#000000');
+    $('.format2').css('background-color','#ffffff');
+    $('#format1').css('color','#000000');
+    $('.format1').css('background-color','#ffffff');
+      $('#ed_format').val('3');
+    return false;
+  });
+});
+</script>
+<div><p class='format'>Формат&nbsp;&nbsp;</p><input name="formatconverta" id='ed_format' type="hidden" value=""></div>
+<div class='fl_l format1'><a href='' id='format1'>Евро 110x220</a></div>
+<div class='fl_l format2'><a href='' id='format2'>C5 162x229</a></div>
+<div class='clear'></div>
+<div class='fl_l format3'><a href='' id='format3'>C4 229x324</a></div>
+<div class='clear'></div>
+<br />
+<div class='fl_l'>
+  <p class='captio'>Цветность</p>
+  <SELECT name='color' class='paper_colors fnt'>
+	<OPTION value='3' selected>4+0</OPTION>
+	<OPTION value='4'>1+0</OPTION>
+  </select>
+</div>
+
+<div class='fl_r'>
+  <p class='captio'>Тираж</p>
+  <SELECT name='count' class='paper_colors fnt'>
+	<OPTION value='50' selected>50</OPTION>
+	<OPTION value='100'>100</OPTION>
+	<OPTION value='200'>200</OPTION>
+	<OPTION value='300'>300</OPTION>
+	<OPTION value='400'>400</OPTION>
+	<OPTION value='500'>500</OPTION>
+	<OPTION value='600'>600</OPTION>
+	<OPTION value='700'>700</OPTION>
+	<OPTION value='800'>800</OPTION>
+	<OPTION value='900'>900</OPTION>
+	<OPTION value='1000'>1000</OPTION>
+  </select>
+</div>
+<div class='clear'></div>
+<br />

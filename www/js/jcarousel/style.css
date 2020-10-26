@@ -1,0 +1,82 @@
+.content_items {
+width:720px;
+height:345px;
+float:left;
+left:0px;
+}
+
+.content_items_prp {
+width:720px;
+/*height:245px;*/
+/*float:left;*/
+left:0px;
+}
+
+
+
+.mycarousel li a {
+color:#666666;
+}
+.mycont{
+	floaT:left;
+	width:100%;
+	overflow:hidden;
+
+}
+
+
+.mycarousel li{
+width:551px;
+floaT:left;
+
+text-align:center;
+}
+
+
+.jcarousel-clip{
+	overflow: hidden;
+		floaT:left;
+	width:551px;
+position:Relative;
+	left:110px;
+}
+
+.jcarousel-prev,
+.jcarousel-next{
+	display:block;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	position: absolute;
+	z-index:9999;
+    top: 135px;
+    right: 9px;
+}
+
+.content_items_prp .jcarousel-prev,
+.content_items_prp .jcarousel-next
+{
+    top: 105px;
+}
+
+.jcarousel-prev {
+ left: 23px;
+}
+.jcarousel-prev{
+	background:url('prev.gif') no-repeat 0 0;
+	float:left;
+}
+
+.jcarousel-next{
+	background:url('next.gif') no-repeat 0 0;
+	float:right;
+}
+
+/*.jcarousel-prev:hover,
+.jcarousel-next:hover,*/
+
+.jcarousel-prev-disabled,
+.jcarousel-next-disabled
+{
+  visibility: hidden;	
+}

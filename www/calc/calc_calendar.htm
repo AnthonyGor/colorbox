@@ -1,0 +1,100 @@
+<br />
+  <script type='text/javascript'>
+$(document).ready(function(){
+
+  $('#format1').css('color','#ffffff');
+  $('#format2').css('color','#000000');
+  $('.format2').css('background-color','#ffffff');
+  $('.format1').css('background-color','#4B5E7C');
+  $('#ed_format').val('матовая');
+
+    $('#a4').css('color','#ffffff');
+    $('.a4').css('background-color','#4B5E7C');
+
+    $('#ro1').css('color','#ffffff');
+    $('.ro1').css('background-color','#4B5E7C');
+
+
+  $('#format1').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format2').css('color','#000000');
+    $('.format2').css('background-color','#ffffff');
+    $('.format1').css('background-color','#4B5E7C');
+      $('#ed_format').val('матовая');
+    return false;
+  });
+  $('#format2').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format1').css('color','#000000');
+    $('.format1').css('background-color','#ffffff');
+    $('.format2').css('background-color','#4B5E7C');
+      $('#ed_format').val('глянцевая');
+    return false;
+  });
+
+
+});
+</script>
+
+<div class='fl_l'><p class='format'>Бумага&nbsp;&nbsp;</p><input name="format" id='ed_format' type="hidden" value=""></div>
+<div class='fl_l format1'><a href='' id='format1'>Матовая</a></div>
+<div class='fl_l format2'><a href='' id='format2'>Глянцевая</a></div>
+<div class='clear'></div>
+<br />
+
+<div class='fl_l'>
+	<div><p class='format'>Формат</p></div>
+	<div class='fl_l a4'><a href='' id='a4'>100 X 70</a></div>
+	<div class='clear'></div>
+</div>
+<div class='fl_r'>
+	<div><p class='format'>Цветность</p></div>
+	<div class='fl_l ro1'><a href='' id='ro1'>4+4</a></div>
+	<div class='clear'></div>
+</div>
+<div class='clear'></div>
+<br />
+<div class='fl_l'>
+  <p class='captio'>Ламинация</p>
+</div>
+<div class='fl_r'>
+  <SELECT name='lamincalendar' class='paper_colors fnt'>
+	<OPTION value='1' selected>32 мкрн гл</OPTION>
+	<OPTION value='2'>32 мкрн мат</OPTION>
+	<OPTION value='3'>75 мкрн гл</OPTION>
+	<OPTION value='4'>75 мкрн мат</OPTION>
+  </select>
+</div>
+<div class='clear'></div>
+<br />
+<!--<div class='fl_l'>
+  <p class='captio'>Скругление углов (радиус)</p>
+</div>
+ <div class='fl_r'>
+  <SELECT name='corne' class='size_3 fnt'>
+	<OPTION value='1' selected>нет</OPTION>
+	<OPTION value='2'>3.5 мм</OPTION>
+	<OPTION value='3'>6.35 мм</OPTION>
+  </select>
+</div> -->
+<div class='clear'></div>
+<br />
+<div class='fl_l'>
+  <p class='captio'>Тираж</p>
+</div>
+<div class='fl_r'>
+  <SELECT name='count' class='paper_colors fnt'>
+	<OPTION value='50' selected>50</OPTION>
+	<OPTION value='100'>100</OPTION>
+	<OPTION value='200'>200</OPTION>
+	<OPTION value='300'>300</OPTION>
+	<OPTION value='400'>400</OPTION>
+	<OPTION value='500'>500</OPTION>
+	<OPTION value='600'>600</OPTION>
+	<OPTION value='700'>700</OPTION>
+	<OPTION value='800'>800</OPTION>
+	<OPTION value='900'>900</OPTION>
+	<OPTION value='1000'>1000</OPTION>
+  </select>
+</div>
+<div class='clear'></div>

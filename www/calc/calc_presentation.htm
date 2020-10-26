@@ -1,0 +1,174 @@
+<br />
+  <script type='text/javascript'>
+$(document).ready(function(){
+
+  
+  $('#format1').css('color','#ffffff');
+  $('#format2').css('color','#000000');
+  $('.format2').css('background-color','#ffffff');
+  $('.format1').css('background-color','#4B5E7C');
+  $('#ed_format').val('матовая');
+
+    $('#a4').css('color','#ffffff');
+    $('#a5, #a3').css('color','#000000');
+    $('.a5, .a3').css('background-color','#ffffff');
+    $('.a4').css('background-color','#4B5E7C');
+    $('#ed_a').val('4');
+
+
+
+  $('#format1').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format2').css('color','#000000');
+    $('.format2').css('background-color','#ffffff');
+    $('.format1').css('background-color','#4B5E7C');
+    $('#ed_format').val('матовая');
+    return false;
+  });
+  $('#format2').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format1').css('color','#000000');
+    $('.format1').css('background-color','#ffffff');
+    $('.format2').css('background-color','#4B5E7C');
+    $('#ed_format').val('глянцевая');
+    return false;
+  });
+
+  $('#a3').click(function(){
+    $(this).css('color','#ffffff');
+    $('#a4, #a5').css('color','#000000');
+    $('.a4, .a5').css('background-color','#ffffff');
+    $('.a3').css('background-color','#4B5E7C');
+    $('#ed_a').val('3');
+    return false;
+  });
+    
+  $('#a4').click(function(){
+    $(this).css('color','#ffffff');
+    $('#a5, #a3').css('color','#000000');
+    $('.a5, .a3').css('background-color','#ffffff');
+    $('.a4').css('background-color','#4B5E7C');
+    $('#ed_a').val('4');
+    return false;
+  });
+  $('#a5').click(function(){
+    $(this).css('color','#ffffff');
+    $('#a3, #a4').css('color','#000000');
+    $('.a3, .a4').css('background-color','#ffffff');
+    $('.a5').css('background-color','#4B5E7C');
+    $('#ed_a').val('5');
+    return false;
+  });
+
+
+});
+</script>
+
+<div class='fl_l'><p class='format'>Бумага&nbsp;&nbsp;</p><input name="matgl" id='ed_format' type="hidden" value=""></div>
+<div class='fl_l format1'><a href='' id='format1'>Матовая</a></div>
+<div class='fl_l format2'><a href='' id='format2'>Глянцевая</a></div>
+<div class='clear'></div>
+
+
+<div class='fl_l' style = 'margin-right: 30px;'>
+	<div><p class='format'  style = 'padding-top: 9px;'>Формат</p><input name="format" id='ed_a' type="hidden" value="4"></div>
+  <div class='fl_l a3' style = 'margin-left: 0px;'><a href='' id='a3'>А3</a></div>	
+  <div class='fl_l a4' style = 'margin-left: 0px;'><a href='' id='a4'>А4</a></div>
+	<div class='fl_l a5' style = 'margin-left: 0px;'><a href='' id='a5'>А5</a></div>
+	<div class='clear'></div>
+</div>
+<div class='fl_r'>
+	<div><p class='format'>Плотность (г/м<sup>2</sup>)</p>
+  
+  <SELECT name='density' class='paper_colors fnt'
+      style = 'margin-top: 5px; width: 60px;'>
+  	 <OPTION value='300' selected>300</OPTION>
+	   <OPTION value='250'>250</OPTION>
+	   <OPTION value='200'>200</OPTION>
+     <OPTION value='150'>150</OPTION>
+	   <OPTION value='135'>135</OPTION>
+     <OPTION value='115'>115</OPTION>
+     <OPTION value='80'>80</OPTION>
+  </select>
+</div>
+	<div class='clear'></div>
+</div>
+<div class='clear'></div>
+
+
+
+
+
+
+
+
+<br />
+
+<table width = '99%' cellpadding = '0' cellspacing = '0'>
+<tr><td width = '65' valign = 'top'>
+<div class='fl_l'>
+  <p class='captio'>Цветность</p>
+  <SELECT name='color' class='paper_colors fnt'
+      style = 'width: 60px; margin-right: 15px; margin-top: 8px;'>
+	<OPTION value='44' selected>4+4</OPTION>
+	<OPTION value='40'>4+0</OPTION>
+  </select>
+</div>
+
+</td><td valign = 'top'>
+
+<div class='fl_r'>
+  <p class='captio'>Переплести по:</p>
+</div>
+<div class='fl_r'>
+  <p class='captio' style = 'line-height: 1.0;'>
+	 <input class = 'perepl' name="pereplet" type="radio" value="1" checked> длинной стороне<br />
+	 <input class = 'perepl' name="pereplet" type="radio" value="2"> короткой стороне
+  </p>
+</div>
+
+</td></tr></table>
+
+<table width = '99%' cellpadding = '0' cellspacing = '0'
+style = 'margin: 10px 0px 0px;'>
+<tr><td width = '110' valign = 'top'>
+
+<div class='fl_l'>
+  <p class='captio'>Число полос</p>
+</div>
+
+<div class='fl_r'>
+  <input style = 'margin-left: 4px; width: 40px; font-size:10px;' name='sides' type='text' value=''>
+</div>
+
+
+</td><td valign = 'top'>
+
+<div class='fl_l'>
+  <p class='captio'>Тираж</p>
+</div>
+
+<div class='fl_r'>
+    <input style = 'margin-left: 4px; width: 40px; font-size:10px;' 
+        name='count' type='text' value=''>
+</div>
+
+</td></tr></table>
+
+<div class = 'warn' style = 'color: red;font-size:10px;
+font-weight:bold; margin-bottom: 10px;'></div>
+
+
+
+<div class='clear'></div>
+<div class='fl_l'>
+  <p class='captio'>Ламинация</p>
+</div>
+<div class='fl_r'>
+  <SELECT name='lamin' class='paper_colors fnt' style = 'width: 90px; margin-left: 5px;'>
+	<OPTION value='1' selected>32 мкрн гл</OPTION>
+	<OPTION value='1'>32 мкрн мат</OPTION>
+  <OPTION value='0'>нет</OPTION>
+  </select>
+</div>
+<div class='clear'></div>

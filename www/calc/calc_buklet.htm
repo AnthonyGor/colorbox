@@ -1,0 +1,161 @@
+<br />
+  <script type='text/javascript'>
+$(document).ready(function(){
+
+  $('#format1').css('color','#ffffff');
+  $('#format2').css('color','#000000');
+  $('.format2').css('background-color','#ffffff');
+  $('.format1').css('background-color','#4B5E7C');
+  $('#ed_format').val('матовая');
+
+    $('#a4').css('color','#ffffff');
+    $('#a5').css('color','#000000');
+    $('.a5').css('background-color','#ffffff');
+    $('.a4').css('background-color','#4B5E7C');
+    $('#ed_a').val('1');
+
+
+    $('#ro1').css('color','#ffffff');
+    $('.ro1').css('background-color','#4B5E7C');
+    $('#ro2').css('color','#000000');
+    $('.ro2').css('background-color','#ffffff');
+    $('#ro3').css('color','#000000');
+    $('.ro3').css('background-color','#ffffff');
+    $('#ed_ro').val('4');
+
+  $('#format1').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format2').css('color','#000000');
+    $('.format2').css('background-color','#ffffff');
+    $('.format1').css('background-color','#4B5E7C');
+    $('#ed_format').val('матовая');
+    return false;
+  });
+  $('#format2').click(function(){
+    $(this).css('color','#ffffff');
+    $('#format1').css('color','#000000');
+    $('.format1').css('background-color','#ffffff');
+    $('.format2').css('background-color','#4B5E7C');
+    $('#ed_format').val('глянцевая');
+    return false;
+  });
+
+  $('#a4').click(function(){
+    $(this).css('color','#ffffff');
+    $('#a5').css('color','#000000');
+    $('.a5').css('background-color','#ffffff');
+    $('.a4').css('background-color','#4B5E7C');
+    $('#ed_a').val('1');
+    return false;
+  });
+  $('#a5').click(function(){
+    $(this).css('color','#ffffff');
+    $('#a4').css('color','#000000');
+    $('.a4').css('background-color','#ffffff');
+    $('.a5').css('background-color','#4B5E7C');
+    $('#ed_a').val('2');
+    return false;
+  });
+
+  $('#ro1').click(function(){
+    $(this).css('color','#ffffff');
+    $('.ro1').css('background-color','#4B5E7C');
+    $('#ro2').css('color','#000000');
+    $('.ro2').css('background-color','#ffffff');
+    $('#ro3').css('color','#000000');
+    $('.ro3').css('background-color','#ffffff');
+    $('#ed_ro').val('4');
+    return false;
+  });
+  $('#ro2').click(function(){
+    $(this).css('color','#ffffff');
+    $('.ro2').css('background-color','#4B5E7C');
+    $('#ro1').css('color','#000000');
+    $('.ro1').css('background-color','#ffffff');
+    $('#ro3').css('color','#000000');
+    $('.ro3').css('background-color','#ffffff');
+    $('#ed_ro').val('2');
+    return false;
+  });
+  $('#ro3').click(function(){
+    $(this).css('color','#ffffff');
+    $('.ro3').css('background-color','#4B5E7C');
+    $('#ro1').css('color','#000000');
+    $('.ro1').css('background-color','#ffffff');
+    $('#ro2').css('color','#000000');
+    $('.ro2').css('background-color','#ffffff');
+    $('#ed_ro').val('5');
+    return false;
+  });
+});
+</script>
+
+<div class='fl_l'><p class='format'>Бумага&nbsp;&nbsp;<input name="paper" id='ed_format' type="hidden" value=""></p></div>
+<div class='fl_l format1'><a href='' id='format1'>Матовая</a></div>
+<div class='fl_l format2'><a href='' id='format2'>Глянцевая</a></div>
+<div class='clear'></div>
+<br />
+
+<div class='fl_l'>
+	<div><p class='format'  style = 'padding-top: 9px;'>Формат</p><input name="format" id='ed_a' type="hidden" value=""></div>
+	<div class='fl_l a4'><a href='' id='a4'>А4</a></div>
+	<div class='fl_l a5'><a href='' id='a5'>А5</a></div>
+	<div class='clear'></div>
+</div>
+<div class='fl_r'>
+	<div><p class='format'>Плотность (г/м<sup>2</sup>)</p><input name="density" id='ed_ro' type="hidden" value=""></div>
+	<div class='fl_l ro1'><a href='' id='ro1'>135</a></div>
+	<div class='fl_l ro2'><a href='' id='ro2'>150</a></div>
+	<div class='fl_l ro3'><a href='' id='ro3'>200</a></div>
+	<div class='clear'></div>
+</div>
+<div class='clear'></div>
+
+<br />
+<div class='fl_l'>
+  <p class='captio'>Цветность</p>
+  <SELECT name='color' class='paper_colors fnt' disabled>
+	<OPTION value='1' selected>4+4</OPTION>
+	<OPTION value='2'>4+4</OPTION>
+  </select>
+</div>
+
+<div class='fl_r'>
+  <p class='captio'>Тираж</p>
+  <SELECT name='count' class='paper_colors fnt'>
+	<OPTION value='10' selected>10</OPTION>
+	<OPTION value='20'>20</OPTION>
+	<OPTION value='50'>50</OPTION>
+	<OPTION value='100'>100</OPTION>
+	<OPTION value='200'>200</OPTION>
+	<OPTION value='300'>300</OPTION>
+	<OPTION value='500'>500</OPTION>
+  </select>
+</div>
+<div class='clear'></div>
+<br />
+
+<div class='fl_l'>
+<p class='captio'>Ламинация:</p>
+  <SELECT name='lamin' class='size_3 fnt'>
+	<OPTION value='2' selected>да</OPTION>
+	<OPTION value='1'>нет</OPTION>
+  </select>
+</div>
+
+
+<!-- <div class='fl_l'>
+<p class='captio'>Биговка:</p>
+  <SELECT name='bigovka' class='size_3 fnt'>
+	<OPTION value='1' selected>да</OPTION>
+	<OPTION value='2'>нет</OPTION>
+  </select>
+</div>
+<div class='fl_l'>
+<p class='captio'>Фальцовка:</p>
+  <SELECT name='falcovka' class='size_3 fnt'>
+	<OPTION value='1' selected>да</OPTION>
+	<OPTION value='2'>нет</OPTION>
+  </select>
+</div>-->
+<div class='clear'></div>
