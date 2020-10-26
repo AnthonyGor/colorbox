@@ -1,0 +1,6 @@
+<?
+
+function your_func () {
+}
+
+?>

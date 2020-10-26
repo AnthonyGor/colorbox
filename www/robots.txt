@@ -1,0 +1,10 @@
+# NetCat Robots file
+User-Agent: *
+Disallow: /admin/
+Disallow: /*?tech
+Disallow: /*?skidki
+Disallow: /*?onas
+Disallow: /*?oborud
+Disallow: /*?curPos*
+Host: boxcolor.ru
+Sitemap: http://boxcolor.ru/sitemap.xml
