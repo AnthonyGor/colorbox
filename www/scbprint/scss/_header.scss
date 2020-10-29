@@ -1,0 +1,257 @@
+/*--------------header top--------------------*/
+
+.page__header .header__top,
+.page__header .header__bottom {
+  border-bottom: 1px solid #a2a1a4;
+}
+
+.header__top .header__wrapper {
+  display: flex;
+  //justify-content: space-between;
+  height: 150px;
+}
+
+.page__header .header__logo {
+  margin-top: 22px;
+  //margin-right: 43px;
+  margin-right: 10px;
+}
+
+.hearer__top .logo__img {
+  width: 258px;
+  height: 81px;
+}
+
+.header__top-navigation {
+  align-self: center;
+  margin-left: auto;
+}
+
+.top-navigation__list {
+  display: flex;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.top-navigation__item {
+  position: relative;
+  padding: 0 23px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+    right: 0;
+    width: 2px;
+    height: 22px;
+    background-color: #74a9ec;
+  }
+}
+
+.top-navigation__link {
+  font-family: "RobotoLight", sans-serif;
+  text-transform: uppercase;
+  font-size: 21.53px;
+  line-height: 26.41px;
+  text-decoration: none;
+  color: #9c9c9c;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.header__top .header-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 280px;
+  margin-left: auto;
+}
+
+.header-contacts__link {
+  position: relative;
+  padding-right: 37px;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  color: #868786;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.header-contacts__link--call {
+  font-size: 29.21px;
+  line-height: 33.22px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 40px;
+    background-image: url('../img/link--call.png');
+  }
+}
+
+.header-contacts__link--whatsapp {
+  font-size: 20px;
+  line-height: 33.22px;
+
+  &::before {
+    content: "WhatsApp";
+    position: absolute;
+    bottom: -20px;
+    right: 45px;
+    width: 55px;
+    height: 36px;
+    font-family: RobotoLight, sans-serif;
+    font-size: 14px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 34px;
+    height: 36px;
+    background-image: url('../img/link--whatsapp.png');
+  }
+}
+
+.header-contacts__link--write {
+  font-size: 17px;
+  line-height: 59.28px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 26px;
+    height: 24px;
+    background-image: url('../img/link--write.png');
+  }
+}
+
+/*--------------header bottom--------------------*/
+
+.header__bottom .header__wrapper {
+  display: flex;
+  align-items: center;
+  height: 67px;
+}
+
+.header__bottom .bottom-navigation {
+  flex-grow: 1;
+}
+
+.bottom-navigation__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.bottom-navigation__item:last-child {
+  margin-right: 55px;
+}
+
+.bottom-navigation__link {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  text-decoration: none;
+  color: #868786;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.header__social {
+  margin-left: auto;
+}
+
+.header-social__list {
+  display: flex;
+  justify-content: space-between;
+  width: 122px;
+  height: 36px;
+  list-style: none;
+}
+
+.header-social__link {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #a2a1a4;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+    background-color: #849c0c;
+  }
+}
+
+.header-social__link--inst {
+  background-image: url("../img/inst-ico.png");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/inst-ico-color.png");
+  }
+}
+
+.header-social__link--fb {
+  background-image: url("../img/f-ico.png");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/f-ico-color.png");
+  }
+}
+
+.header-social__link--map {
+  background-image: url("../img/log-ico.png");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/log-ico-color.png");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

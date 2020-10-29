@@ -1,0 +1,38 @@
+.statistics__table {
+  width: 100%;
+}
+
+.statistics-table__th {
+  height: 181px;
+  font-family: "Roboto Black", sans-serif;
+  font-size: 113.96px;
+  line-height: 70%;
+  color: #00aeef;
+  vertical-align: bottom;
+
+  &:first-child {
+    text-align: left;
+  }
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.statistics-table__td {
+  padding-top: 25px;
+  font-family: Roboto, sans-serif;
+  font-size: 31.31px;
+  line-height: 43.35px;
+  color: #504e53;
+  text-align: center;
+  vertical-align: top;
+
+  &:first-child {
+    position: relative;
+    left: -55px;
+  }
+  &:last-child {
+    position: relative;
+    right: -70px;
+  }
+}

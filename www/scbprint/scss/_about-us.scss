@@ -1,0 +1,55 @@
+.about-us__wrapper {
+  position: relative;
+  padding-top: 90px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 524px;
+    height: 539px;
+    background-image: url('../img/colorful-cat.png');
+    background-repeat:  no-repeat;
+    background-position: center;
+  }
+}
+
+.about-us__subtitle {
+  position: relative;
+  top: -4px;
+  width: 834px;
+  height: 187px;
+  max-height: 187px;
+  padding-top: 36px;
+  padding-left: 139px;
+  background-color: #00d3e1;
+  font-family: ProximaNovaT-Thin, sans-serif;
+  font-size: 76px;
+  line-height: 50px;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 700px;
+    height: 70px;
+    background: #00aee1;
+  }
+}
+
+.about-us__description {
+  position: relative;
+  top: -74px;
+  left: 134px;
+  width: 732px;
+  height: 267px;
+  max-height: 267px;
+  padding: 90px 93px 15px 47px;
+  background: #c8d5ff;
+  font-size: 22px;
+  line-height: 21px;
+}

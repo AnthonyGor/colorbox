@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Black.ttf") format("truetype"),
+  url("../font/Roboto-Black.eot") format("embedded-opentype"),
+  url("../font/Roboto-Black.woff") format("woff"),
+  url("../font/Roboto-Black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../font/RobotoMedium.ttf") format("truetype"),
+  url("../font/RobotoMedium.eot") format("embedded-opentype"),
+  url("../font/RobotoMedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../font/RobotoRegular.ttf") format("truetype"),
+  url("../font/RobotoRegular.eot") format("embedded-opentype"),
+  url("../font/RobotoRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url("../font/RobotoLight.ttf") format("truetype"),
+  url("../font/RobotoLight.eot") format("embedded-opentype"),
+  url("../font/RobotoLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: ProximaNovaT-Thin;
+  src: url("../font/ProximaNovaT-Thin.ttf") format("truetype"),
+  url("../font/ProximaNovaT-Thin.eot") format("embedded-opentype"),
+  url("../font/ProximaNovaT-Thin.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: MyriadProLight;
+  src: url("../font/Myriad-Pro-Light_31642.ttf") format("truetype"),
+  url("../font/MyriadPro Light.otf") format("OpenType");
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+html, body {
+  background-color: #ffffff;
+}
+
+body, ul, li, h1, h2, h3, p, button, section, nav, header, footer, main, img, input, label, form, strong, b, span, a, strong {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::before {
+    box-sizing: border-box;
+  }
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  overflow: hidden;
+ }
+
+.wrapper {
+  //width: 80%;
+  //min-width: 1308px;
+  //max-width: 1441px;
+  width: 1441px;
+  margin: 0 auto;
+}
