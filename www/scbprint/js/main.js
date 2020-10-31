@@ -38,6 +38,9 @@ $(document).ready(function(){
         $('.popup').fadeOut();
     });
     $('#number').inputmask('+7 ( 999 ) 9999 - 999');
+
+
+
 });
 
 

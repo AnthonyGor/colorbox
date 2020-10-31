@@ -1,10 +1,117 @@
-.extras {
-
-}
-
 .extras__wrapper {
+  position: relative;
   min-height: 1638px;
   background: url("../img/extras-bg.png") no-repeat center;
   background-size: contain;
-  outline: 1px solid red;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1456px;
+    height: 32px;
+    transform: translateX(-50%);
+    background: url("../img/line-bottom.png") no-repeat center;
+  }
 }
+
+.extras__list {
+  position: relative;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  width: 770px;
+  list-style: none;
+}
+
+.extras__item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 180px;
+  height: 225px;
+  margin-right: 115px;
+  font-family: RobotoBold, sans-serif;
+  font-weight: 700;
+  color: #3a3a39;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:nth-child(-n+6) {
+    margin-bottom: 40px;
+  }
+}
+
+.extras__item--idea {
+  background-image: url('../img/extras-idea.png');
+}
+
+.extras__item--design {
+  background-image: url('../img/extras-design.png');
+}
+
+.extras__item--animation {
+  background-image: url('../img/extras-animation.png');
+}
+
+.extras__item--video {
+  background-image: url('../img/extras-video.png');
+}
+
+.extras__item--photo {
+  background-image: url('../img/extras-photo.png');
+}
+
+.extras__item--presentations {
+  background-image: url('../img/extras-presentation.png');
+}
+
+.extras__item--production {
+  background-image: url('../img/extras-production.png');
+}
+
+.extras__item--packaging {
+  background-image: url('../img/extras-packaging.png');
+}
+
+.extras__item--souvenirs {
+  background-image: url('../img/extras-souvenirs.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

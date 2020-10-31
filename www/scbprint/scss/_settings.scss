@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: 900;
 }
+
 @font-face {
   font-family: Roboto;
   src: url("../font/RobotoMedium.ttf") format("truetype"),
@@ -15,6 +16,7 @@
   font-style: normal;
   font-weight: 500;
 }
+
 @font-face {
   font-family: Roboto;
   src: url("../font/RobotoRegular.ttf") format("truetype"),
@@ -23,6 +25,7 @@
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: RobotoLight;
   src: url("../font/RobotoLight.ttf") format("truetype"),
@@ -31,6 +34,17 @@
   font-style: normal;
   font-weight: 300;
 }
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../font/roboto-bold.ttf") format("truetype"),
+  url("../font/roboto-bold.eot") format("embedded-opentype"),
+  url("../font/roboto-bold.woff") format("woff"),
+  url("../font/roboto-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
 @font-face {
   font-family: ProximaNovaT-Thin;
   src: url("../font/ProximaNovaT-Thin.ttf") format("truetype"),
@@ -39,6 +53,7 @@
   font-style: normal;
   font-weight: 300;
 }
+
 @font-face {
   font-family: MyriadProLight;
   src: url("../font/Myriad-Pro-Light_31642.ttf") format("truetype"),
@@ -55,7 +70,7 @@ html, body {
   background-color: #ffffff;
 }
 
-body, ul, li, h1, h2, h3, p, button, section, nav, header, footer, main, img, input, label, form, strong, b, span, a, strong {
+body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, main, img, input, label, form, strong, b, span, a, strong, figure, figcaption {
   margin: 0;
   padding: 0;
 }
@@ -66,9 +81,19 @@ body, ul, li, h1, h2, h3, p, button, section, nav, header, footer, main, img, in
   &::before {
     box-sizing: border-box;
   }
+
   &::after {
     box-sizing: border-box;
   }
+}
+
+.section-title {
+  margin-top: 25px;
+  margin-bottom: 75px;
+  font-family: RobotoLight, sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -79,7 +104,7 @@ body, ul, li, h1, h2, h3, p, button, section, nav, header, footer, main, img, in
   margin: -1px;
   border: none;
   overflow: hidden;
- }
+}
 
 .wrapper {
   //width: 80%;
@@ -88,3 +113,24 @@ body, ul, li, h1, h2, h3, p, button, section, nav, header, footer, main, img, in
   width: 1441px;
   margin: 0 auto;
 }
+
+//@media (max-width: 1308px) {
+//  body {
+//    zoom: 90%;
+//  }
+//}
+
+//body {
+//  transform: scale(0.8, 0.8);
+//  transform-origin: top;
+//}
+
+//@media (max-width: 1308px) {
+//  @-moz-document url-prefix() {
+//    body {
+//      transform: scale(0.8, 0.8);
+//      transform-origin: top;
+//    }
+//
+//  }
+//}
