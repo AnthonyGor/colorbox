@@ -13,6 +13,7 @@
     height: 32px;
     transform: translateX(-50%);
     background: url("../img/line-bottom.png") no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -35,7 +36,10 @@
   height: 225px;
   margin-right: 115px;
   font-family: RobotoBold, sans-serif;
+  font-size: 25.64px;
+  line-height: 21.2px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #3a3a39;
   text-align: center;
   background-repeat: no-repeat;
@@ -86,7 +90,35 @@
   background-image: url('../img/extras-souvenirs.png');
 }
 
+@media (max-width: $bigMonitor) {
+  .extras__wrapper {
+    min-height: 1310.4px;
+    background: url("../img/extras-bg.png") no-repeat center;
+    background-size: contain;
 
+    &::after {
+      width: 1164.8px;
+      height: 25.6px;
+    }
+  }
+
+  .extras__list {
+    top: 300px; //не менять
+    width: 616px;
+  }
+
+  .extras__item {
+    width: 144px;
+    height: 150px;
+    margin-right: 92px;
+    font-size: 20.51px;
+    background-size: 80%;
+
+    &:nth-child(-n+6) {
+      margin-bottom: 32px;
+    }
+  }
+}
 
 
 

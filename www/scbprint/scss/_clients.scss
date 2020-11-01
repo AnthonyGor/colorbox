@@ -11,6 +11,7 @@
     height: 32px;
     transform: translateX(-50%);
     background: url("../img/line-bottom.png") no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -33,4 +34,20 @@
 
 .clients__image {
   object-fit: contain;
+}
+
+@media (max-width: $bigMonitor) {
+  .clients__wrapper {
+    padding-bottom: 24px;
+
+    &::after {
+      width: 1164.8px;
+      height: 25.6px;
+    }
+  }
+
+  .clients__item {
+    width: 272px;
+    margin-bottom: 36px;
+  }
 }

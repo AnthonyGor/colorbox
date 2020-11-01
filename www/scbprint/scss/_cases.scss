@@ -11,6 +11,7 @@
     height: 32px;
     transform: translateX(-50%);
     background: url("../img/line-bottom.png") no-repeat center;
+    background-size: cover;
   }
 }
 
@@ -40,7 +41,8 @@
 }
 
 .cases-frame__image {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -82,6 +84,39 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: $bigMonitor) {
+  .cases__wrapper {
+    padding-bottom: 48px;
+
+    &::after {
+      width: 1164.8px;
+      height: 25.6px;
+    }
+  }
+
+  .cases__item {
+    margin-bottom: 18.4px;
+    border-radius: 12px;
+  }
+
+  .cases__frame.fr1 {
+    width: 274.4px;
+    height: 250.4px;
+  }
+
+  .cases__frame.fr2 {
+    width: 571.2px;
+    height: 250.4px;
+  }
+
+  .cases-frame__description {
+    font-size: 20px;
+  }
+
+  .cases-frame__name {
+    margin-bottom: 8px;
+  }
+}
 
 
 

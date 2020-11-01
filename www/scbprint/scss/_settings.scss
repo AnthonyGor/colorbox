@@ -107,11 +107,19 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, m
 }
 
 .wrapper {
-  //width: 80%;
-  //min-width: 1308px;
-  //max-width: 1441px;
   width: 1441px;
   margin: 0 auto;
+}
+
+@media (max-width: $bigMonitor) {
+  .wrapper {
+    width: 1153px;
+  }
+  .section-title {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
 }
 
 //@media (max-width: 1308px) {

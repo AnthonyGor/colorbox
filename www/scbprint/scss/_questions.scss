@@ -1,0 +1,117 @@
+.questions {
+  position: relative;
+  height: 300px;
+  margin-bottom: 90px;
+  font-family: RobotoBold, sans-serif;
+  color: #ffffff;
+  background: url("../img/questions-bg-big.jpg") no-repeat center;
+  background-size: 100% 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    width: 1456px;
+    height: 32px;
+    transform: translateX(-50%);
+    background: url("../img/line-bottom.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.questions__wrapper {
+  position: relative;
+  height: 100%;
+  padding-top: 115px;
+  padding-left: 255px;
+}
+
+.questions__title {
+  margin-bottom: 24px;
+  font-size: 37.53px;
+  line-height: 20.71px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 115px;
+    left: 140px;
+    width: 85px;
+    height: 85px;
+    background: url("../img/question-sign.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.questions__description {
+  width: 765px;
+  font-size: 17.02px;
+  line-height: 20.71px;
+}
+
+.questions__button {
+  position: absolute;
+  top: 125px;
+  right: 132px;
+  width: 237px;
+  height: 76px;
+  border: 2px solid #ffffff;
+  color: inherit;
+  font-size: 24px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease-out;
+  
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #01aff1;
+  }
+}
+
+@media (max-width: $bigMonitor) {
+  .questions {
+    height: 240px;
+    margin-bottom: 72px;
+
+    &::after {
+      bottom: -56px;
+      width: 1164.8px;
+      height: 25.6px;
+    }
+  }
+
+  .questions__wrapper {
+    padding-top: 92px;
+    padding-left: 204px;
+  }
+
+  .questions__title {
+    margin-bottom: 19.2px;
+    font-size: 30px;
+    line-height: 16.5px;
+
+    &::before {
+      top: 92px;
+      left: 112px;
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  .questions__description {
+    width: 612px;
+    font-size: 13.6px;
+    line-height: 16.5px;
+  }
+
+  .questions__button {
+    top: 100px;
+    right: 105.6px;
+    width: 189.6px;
+    height: 60.8px;
+    font-size: 19.2px;
+  }
+}

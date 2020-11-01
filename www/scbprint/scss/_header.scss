@@ -1,30 +1,37 @@
 /*--------------header top--------------------*/
 
-.page__header .header__top,
-.page__header .header__bottom {
+.page__header {
+  //position: fixed;
+  top: 0;
+  left: 50%;
+  //transform: translateX(-50%);
+  width: 100%;
+  background: #ffffff;
+  z-index: 10;
+}
+
+.header__top,
+.header__bottom {
   border-bottom: 1px solid #a2a1a4;
 }
 
 .header__top .header__wrapper {
   display: flex;
-  //justify-content: space-between;
   height: 150px;
 }
 
 .page__header .header__logo {
   margin-top: 22px;
-  //margin-right: 43px;
-  margin-right: 10px;
+  margin-right: 43px;
 }
 
-.hearer__top .logo__img {
+.logo__img {
   width: 258px;
   height: 81px;
 }
 
 .header__top-navigation {
   align-self: center;
-  margin-left: auto;
 }
 
 .top-navigation__list {
@@ -36,6 +43,7 @@
 .top-navigation__item {
   position: relative;
   padding: 0 23px;
+  transition: .2s ease-out;
 
   &:first-child {
     padding-left: 0;
@@ -59,6 +67,10 @@
     height: 22px;
     background-color: #74a9ec;
   }
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .top-navigation__link {
@@ -68,11 +80,6 @@
   line-height: 26.41px;
   text-decoration: none;
   color: #9c9c9c;
-
-  &:hover,
-  &:focus {
-    opacity: 0.7;
-  }
 }
 
 .header__top .header-contacts {
@@ -110,6 +117,9 @@
     width: 25px;
     height: 40px;
     background-image: url('../img/link--call.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -135,6 +145,9 @@
     width: 34px;
     height: 36px;
     background-image: url('../img/link--whatsapp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -150,6 +163,9 @@
     width: 26px;
     height: 24px;
     background-image: url('../img/link--write.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -207,15 +223,19 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  transition: .2s ease-out;
 
   &:hover,
   &:focus {
     background-color: #849c0c;
+    transform: scale(1.2);
   }
 }
 
 .header-social__link--inst {
   background-image: url("../img/inst-ico.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
   &:hover,
   &:focus {
@@ -225,6 +245,8 @@
 
 .header-social__link--fb {
   background-image: url("../img/f-ico.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
   &:hover,
   &:focus {
@@ -234,6 +256,8 @@
 
 .header-social__link--map {
   background-image: url("../img/log-ico.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
   &:hover,
   &:focus {
@@ -241,7 +265,110 @@
   }
 }
 
+@media (max-width: $bigMonitor) {
+  .header__top .header__wrapper {
+    height: 120px;
+  }
 
+  .page__header .header__logo {
+    margin-top: 16.6px;
+    margin-right: 34.4px;
+  }
+
+    .logo__img {
+    width: 206.4px;
+    height: 64.8px;
+  }
+
+  .top-navigation__list {
+    margin-top: 8px;
+  }
+
+  .top-navigation__item {
+    padding: 0 18.4px;
+    &::after {
+      width: 1.6px;
+      height: 17.6px;
+    }
+  }
+
+  .top-navigation__link {
+    font-size: 17.22px;
+  }
+
+  .header__top .header-contacts {
+    min-width: 224px;
+  }
+
+  .header-contacts__link {
+    padding-right: 29.6px;
+  }
+
+  .header-contacts__link--call {
+    font-size: 23.36px;
+    line-height: 26.57px;
+    margin-top: 12.8px;
+    margin-bottom: 8px;
+
+    &::after {
+      width: 20px;
+      height: 32px;
+    }
+  }
+
+  .header-contacts__link--whatsapp {
+    font-size: 16px;
+    line-height: 26.57px;
+
+    &::before {
+      bottom: -16px;
+      right: 36px;
+      width: 44px;
+      height: 28.8px;
+      font-size: 11.2px;
+    }
+
+    &::after {
+      width: 27.2px;
+      height: 28.8px;
+    }
+  }
+
+  .header-contacts__link--write {
+    font-size: 13.6px;
+    line-height: 47.42px;
+
+    &::after {
+      top: 10.4px;
+      width: 20.8px;
+      height: 19.2px;
+    }
+  }
+
+  /*--------------header bottom--------------------*/
+
+  .header__bottom .header__wrapper {
+    height: 53.6px;
+  }
+
+  .bottom-navigation__item:last-child {
+    margin-right: 44px;
+  }
+
+  .bottom-navigation__link {
+    font-size: 18.4px;
+  }
+
+  .header-social__list {
+    width: 97.6px;
+    height: 28.8px;
+  }
+
+  .header-social__link {
+    width: 28.8px;
+    height: 28.8px;
+  }
+}
 
 
 

@@ -7,7 +7,6 @@
 	<title>scbprint.ru</title>
 	<meta name='description' content='рекламно-производственная компания'>
 	<link rel="stylesheet" href="./scbprint/css/normalize.css">
-	<link rel="stylesheet" href="./scbprint/css/slick.css">
 	<link rel="stylesheet" href="./scbprint/css/style.min.css">
 </head>
 <body>
@@ -502,13 +501,13 @@
 			</li>
 			<li class="slider__item">
 				<a class="production__link" href="">
-						<img class="production__image" src="./netcat_files/289/574/preview_typ_3.jpg" alt="Приглашения и открытки">
-						<p class="production__description">Приглашения и открытки</p>
+					<img class="production__image" src="./netcat_files/289/574/preview_typ_3.jpg" alt="Приглашения и открытки">
+					<p class="production__description">Приглашения и открытки</p>
 				</a>
 			</li>
 			<li class="slider__item">
 				<a class="production__link" href="">
-						<img class="production__image" src="./netcat_files/289/574/preview_typ_2.jpg" alt="Журналы">
+					<img class="production__image" src="./netcat_files/289/574/preview_typ_2.jpg" alt="Журналы">
 					<p class="production__description">Журналы</p>
 				</a>
 			</li>
@@ -522,7 +521,51 @@
 		<button class="slider__button slider__button--left" aria-label="кнопка слайдера влево"></button>
 		<button class="slider__button slider__button--right" aria-label="кнопка слайдера вправо"></button>
 	</section>
+	<!--	questions-->
+	<section class="questions">
+		<div class="questions__wrapper wrapper">
+			<h3 class="questions__title">Есть вопросы - спрашивайте!</h3>
+			<p class="questions__description">
+				Наши менеджеры помогут сориентироваться в огромном рекламно-полиграфическом мире, а дизайнеры разработают
+				оригинальный дизайн с запоминающейся графикой.
+			</p>
+			<button class="questions__button">Задать вопрос</button>
+		</div>
+	</section>
+	<!--	contacts-->
+	<section class="contacts">
+		<div class="contacts__wrapper wrapper">
+			<h2 class="contacts__title section-title">Контакты</h2>
+			<div class="contacts__address address">
+				<p class="address__company-name">ООО "Студия Колор Бокс"</p>
+				<p class="address__description">127991, г. Москва, Бумажный проезд, дом 14, строение 2</p>
+				<a class="address__link" href="#">Учетная карточка</a>
+			</div>
+			<div class="contacts__map">
+				<iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CCQ~74vJ0D"></iframe>
+			</div>
+		</div>
+	</section>
 </main>
+<div class="modal-window modal-window__overlay">
+	<div class="modal-window__wrapper">
+		<button class="modal-window__close-btn"></button>
+		<form class="modal-window__form ask-form" method="post" action="/scbprint/zayavka.php">
+
+			<label class="modal-window__label" for="name">Имя</label>
+			<input id="name" class="modal-window__input" name="name">
+
+			<label class="modal-window__label" for="number">Телефон</label>
+			<input id="number" class="modal-window__input" name="number">
+
+			<label class="modal-window__label" for="message">Ваш вопрос</label>
+			<textarea id="message" class="modal-window__input modal-window__input--textarea" name="message"></textarea>
+
+			<button type="submit" class="modal-window__apply-btn">Отправить</button>
+		</form>
+	</div>
+</div>
 <script src="scbprint/js/portfolio.js"></script>
+<script src="scbprint/js/script.js"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
     background-image: url('../img/colorful-cat.png');
     background-repeat:  no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
 
@@ -52,4 +53,42 @@
   background: #c8d5ff;
   font-size: 22px;
   line-height: 21px;
+}
+
+@media (max-width: $bigMonitor) {
+  .about-us__wrapper {
+    padding-top: 72px;
+
+    &::after {
+      width: 419.2px;
+      height: 431.2px;
+    }
+  }
+
+  .about-us__subtitle {
+    top: -3.2px;
+    width: 667.2px;
+    height: 149.6px;
+    max-height: 149.6px;
+    padding-top: 28.8px;
+    padding-left: 111.2px;
+    font-size: 60.8px;
+    line-height: 40px;
+
+    &::after {
+      width: 560px;
+      height: 56px;
+    }
+  }
+
+  .about-us__description {
+    top: -59.2px;
+    left: 107.2px;
+    width: 585.6px;
+    height: 213.6px;
+    max-height: 213.6px;
+    padding: 72px 74.4px 12px 37.6px;
+    font-size: 17.6px;
+    line-height: 16.8px;
+  }
 }

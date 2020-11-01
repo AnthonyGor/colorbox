@@ -16,6 +16,7 @@
     background-image: url('../img/introduction-bg-desctop.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
 
@@ -53,5 +54,46 @@
     background-image: url('../img/introduction-sign.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: $bigMonitor) {
+  .introduction__wrapper {
+    height: 613.6px;
+    margin-top: 65.6px;
+    &::before {
+      top: -80px;
+      left: -165.6px;
+      width: 622.4px;
+      height: 622.4px;
+    }
+  }
+
+  .introduction__subtitle {
+    top: 240px;
+    left: 400px;
+    font-size: 51px;
+    line-height: 33.15px;
+  }
+
+  .introduction__subtitle--span {
+    top: 56px;
+    left: 88px;
+  }
+
+  .introduction__description {
+    top: 376px;
+    left: 492px;
+    width: 460px;
+    font-size: 24.71px;
+    line-height: 28.37px;
+
+    &::after {
+      bottom: -16px;
+      right: -200px;
+      width: 222.4px;
+      height: 84px;
+    }
   }
 }

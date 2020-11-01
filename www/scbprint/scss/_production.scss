@@ -85,6 +85,46 @@
   }
 }
 
+@media (max-width: $bigMonitor) {
+  .production__title {
+    margin-bottom: 56px;
+  }
+
+  .production__list {
+    margin-bottom: 88px;
+  }
+
+  .slider__item {
+    min-width: 376px;
+    height: 254.4px;
+    margin-right: 6px;
+  }
+
+  .production__description {
+    bottom: 36.8px;
+    left: 16.8px;
+    font-size: 13.12px;
+  }
+
+  .slider__button {
+    bottom: 89.6px;
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      width: 40px;
+      height: 20px;
+    }
+  }
+
+  .slider__button--left {
+    left: 32px;
+  }
+
+  .slider__button--right {
+    right: 32px;
+  }
+}
 
 
 
