@@ -51,3 +51,19 @@
     margin-bottom: 36px;
   }
 }
+
+@media (max-width: $smallMonitor) {
+  .clients__wrapper {
+    padding-bottom: 20.4px;
+
+    &::after {
+      width: 990.08px;
+      height: 21.76px;
+    }
+  }
+
+  .clients__item {
+    width: 231.2px;
+    margin-bottom: 30.6px;
+  }
+}

@@ -118,8 +118,39 @@
   }
 }
 
+@media (max-width: $smallMonitor) {
+  .cases__wrapper {
+    padding-bottom: 40.8px;
 
+    &::after {
+      width: 990px;
+      height: 21.76px;
+    }
+  }
 
+  .cases__item {
+    margin-bottom: 15.64px;
+    border-radius: 10.2px;
+  }
+
+  .cases__frame.fr1 {
+    width: 233.24px;
+    height: 212.84px;
+  }
+
+  .cases__frame.fr2 {
+    width: 485.52px;
+    height: 212.84px;
+  }
+
+  .cases-frame__description {
+    font-size: 17px;
+  }
+
+  .cases-frame__name {
+    margin-bottom: 6.8px;
+  }
+}
 
 
 

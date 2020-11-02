@@ -85,3 +85,39 @@
     height: 423px;
   }
 }
+
+@media (max-width: $smallMonitor) {
+  .contacts {
+    height: 734.4px;
+  }
+
+  .contacts__title {
+    margin-bottom: 102px;
+  }
+
+  .contacts__address {
+    width: 319.6px;
+  }
+
+  .address__company-name {
+    margin-bottom: 51px;
+    font-size: 17.34px;
+    line-height: 12.24px;
+  }
+
+  .address__description {
+    width: 244.8px;
+    margin-bottom: 51px;
+    font-size: 13.43px;
+    line-height: 19.27px;
+  }
+
+  .address__link {
+    font-size: 14px;
+  }
+
+  .contacts__map {
+    width: 595px;
+    height: 359.5px;
+  }
+}

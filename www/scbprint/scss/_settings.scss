@@ -122,23 +122,15 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, m
   }
 }
 
-//@media (max-width: 1308px) {
-//  body {
-//    zoom: 90%;
-//  }
-//}
 
-//body {
-//  transform: scale(0.8, 0.8);
-//  transform-origin: top;
-//}
+@media (max-width: $smallMonitor) {
+  .wrapper {
+    width: 980.05px;
+  }
+  .section-title {
+    margin-top: 17px;
+    margin-bottom: 51px;
+    font-size: 34px;
+  }
+}
 
-//@media (max-width: 1308px) {
-//  @-moz-document url-prefix() {
-//    body {
-//      transform: scale(0.8, 0.8);
-//      transform-origin: top;
-//    }
-//
-//  }
-//}

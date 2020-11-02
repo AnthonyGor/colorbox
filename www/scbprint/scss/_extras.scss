@@ -103,7 +103,7 @@
   }
 
   .extras__list {
-    top: 300px; //не менять
+    top: 300px;
     width: 616px;
   }
 
@@ -120,7 +120,32 @@
   }
 }
 
+@media (max-width: $smallMonitor) {
+  .extras__wrapper {
+    min-height: 1113.84px;
 
+    &::after {
+      width: 990.08px;
+      height: 21.76px;
+    }
+  }
+
+  .extras__list {
+    top: 255px;
+    width: 523.6px;
+  }
+
+  .extras__item {
+    width: 122.4px;
+    height: 127.5px;
+    margin-right: 78.2px;
+    font-size: 14.43px;
+
+    &:nth-child(-n+6) {
+      margin-bottom: 27.2px;
+    }
+  }
+}
 
 
 

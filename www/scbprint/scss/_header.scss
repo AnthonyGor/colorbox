@@ -368,8 +368,119 @@
     width: 28.8px;
     height: 28.8px;
   }
+  .header-social__link--inst {
+    background-size: 65%;
+  }
 }
 
+@media (max-width: $smallMonitor) {
+  .header__top .header__wrapper {
+    height: 102px;
+  }
+
+  .page__header .header__logo {
+    margin-top: 14.11px;
+    margin-right: 29.24px;
+  }
+
+  .logo__img {
+    width: 175.1px;
+    height: 55.08px;
+  }
+
+  .top-navigation__list {
+    margin-top: 6.8px;
+  }
+
+  .top-navigation__item {
+    padding: 0 15.64px;
+    &::after {
+      width: 1.6px;
+      height: 14.96px;
+    }
+  }
+
+  .top-navigation__link {
+    font-size: 14.6px;
+  }
+
+  .header__top .header-contacts {
+    min-width: 190.4px;
+  }
+
+  .header-contacts__link {
+    padding-right: 25.16px;
+  }
+
+  .header-contacts__link--call {
+    font-size: 19.85px;
+    line-height: 22.58px;
+    margin-top: 10.088px;
+    margin-bottom: 6.8px;
+
+    &::after {
+      width: 17px;
+      height: 27.2px;
+    }
+  }
+
+  .header-contacts__link--whatsapp {
+    font-size: 13.6px;
+    line-height: 22.58px;
+
+    &::before {
+      bottom: -13.6px;
+      right: 30.6px;
+      width: 37.4px;
+      height: 24.48px;
+      font-size: 9.52px;
+    }
+
+    &::after {
+      width: 23.12px;
+      height: 24.48px;
+    }
+  }
+
+  .header-contacts__link--write {
+    font-size: 11.56px;
+    line-height: 40.30px;
+
+    &::after {
+      top: 8.84px;
+      width: 16.68px;
+      height: 16.32px;
+    }
+  }
+
+  /*--------------header bottom--------------------*/
+
+  .header__bottom .header__wrapper {
+    height: 45.56px;
+  }
+
+  .bottom-navigation__item:last-child {
+    margin-right: 37.4px;
+  }
+
+  .bottom-navigation__link {
+    font-size: 15.64px;
+  }
+
+  .header-social__list {
+    width: 82.96px;
+    height: 24.48px;
+  }
+
+  .header-social__link {
+    width: 24.48px;
+    height: 24.48px;
+  }
+
+  .header-social__link--inst {
+    background-size: 65%;
+  }
+}
 
 
 

@@ -1,11 +1,12 @@
 .introduction {
   background-color: #00d1e0;
+  margin-top: 82px;
 }
 
 .introduction__wrapper {
   position: relative;
   height: 767px;
-  margin-top: 82px;
+
   &::before {
     content: "";
     position: absolute;
@@ -59,9 +60,13 @@
 }
 
 @media (max-width: $bigMonitor) {
+  .introduction {
+    margin-top: 65.6px;
+  }
+
   .introduction__wrapper {
     height: 613.6px;
-    margin-top: 65.6px;
+
     &::before {
       top: -80px;
       left: -165.6px;
@@ -94,6 +99,50 @@
       right: -200px;
       width: 222.4px;
       height: 84px;
+    }
+  }
+}
+
+@media (max-width: $smallMonitor) {
+  .introduction {
+    margin-top: 55.76px;
+  }
+
+  .introduction__wrapper {
+    height: 521.56px;
+
+    &::before {
+      top: -68px;
+      left: -140.76px;
+      width: 529.04px;
+      height: 529.04px;
+    }
+  }
+
+  .introduction__subtitle {
+    top: 204px;
+    left: 340px;
+    font-size: 43.35px;
+    line-height: 27.17px;
+  }
+
+  .introduction__subtitle--span {
+    top: 47.6px;
+    left: 74.8px;
+  }
+
+  .introduction__description {
+    top: 319px;
+    left: 418.2px;
+    width: 391px;
+    font-size: 21px;
+    line-height: 24.1px;
+
+    &::after {
+      bottom: -13.6px;
+      right: -170px;
+      width: 189px;
+      height: 71.4px;
     }
   }
 }

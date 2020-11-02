@@ -126,6 +126,46 @@
   }
 }
 
+@media (max-width: $smallMonitor) {
+  .production__title {
+    margin-bottom: 47.6px;
+  }
+
+  .production__list {
+    margin-bottom: 74.8px;
+  }
+
+  .slider__item {
+    min-width: 319.6px;
+    height: 216.24px;
+    margin-right: 5.1px;
+  }
+
+  .production__description {
+    bottom: 31.28px;
+    left: 14.28px;
+    font-size: 11.15px;
+  }
+
+  .slider__button {
+    bottom: 76.16px;
+    width: 34px;
+    height: 34px;
+
+    &::before {
+      width: 34px;
+      height: 17px;
+    }
+  }
+
+  .slider__button--left {
+    left: 27.2px;
+  }
+
+  .slider__button--right {
+    right: 27.2px;
+  }
+}
 
 
 
