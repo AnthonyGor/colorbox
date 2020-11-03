@@ -1,18 +1,22 @@
 (function () {
-  const questionsButton = document.querySelector('.questions__button');
-  const  modalWindow = document.querySelector('.modal-window');
-  const closeButton = document.querySelector('.modal-window__close-btn');
-  const pageMain = document.querySelector('.page__main');
-  const pageHeader = document.querySelector('.page__header');
-  const body = document.querySelector("body");
+  var extrasList = document.querySelector('.extras__list');
+  var casesList = document.querySelector('.cases__list')
+  var blogWrapper = document.querySelector('.blog__wrapper');
+  var clientsList = document.querySelector('.clients__list');
 
-  questionsButton.addEventListener('click', () => {
-    modalWindow.classList.add('modal-window__overlay--open');
-    pageMain.classList.add('filter-blur');
-  })
-
-  closeButton.addEventListener('click', () => {
-    modalWindow.classList.remove('modal-window__overlay--open');
-    pageMain.classList.remove('filter-blur');
+  window.addEventListener('scroll', function () {
+    // console.log(window.pageYOffset)
+    if (window.pageYOffset >= 1300) {
+      extrasList.classList.add('extras__list--show');
+    }
+    if (window.pageYOffset >= 2500) {
+      casesList.classList.add('cases__list--show');
+    }
+    if (window.pageYOffset >= 3900) {
+      blogWrapper.classList.add('blog__wrapper--show');
+    }
+    if (window.pageYOffset >= 4600) {
+      clientsList.classList.add('clients__list--show');
+    }
   })
 }());

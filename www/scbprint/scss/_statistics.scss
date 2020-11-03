@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: $bigMonitor) {
+@media (max-width: $middleMonitor) {
   .statistics-table__th {
     height: 144.8px;
     font-size: 91.16px;
@@ -73,6 +73,27 @@
     }
     &:last-child {
       right: -47.6px;
+    }
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .statistics-table__th {
+    height: 124px;
+    font-size: 67.86px;
+    line-height: 70%;
+  }
+
+  .statistics-table__td {
+    padding-top: 15px;
+    font-size: 18.65px;
+    line-height: 25.82px;
+
+    &:first-child {
+      left: -40px;
+    }
+    &:last-child {
+      right: -40px;
     }
   }
 }

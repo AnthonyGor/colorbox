@@ -21,6 +21,12 @@
   justify-content: space-between;
   width: 100%;
   list-style: none;
+  transform: translateX(-200%);
+  transition: .6s ease-in-out;
+}
+
+.cases__list--show {
+  transform: translateX(0);
 }
 
 .cases__item {
@@ -84,7 +90,7 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: $bigMonitor) {
+@media (max-width: $middleMonitor) {
   .cases__wrapper {
     padding-bottom: 48px;
 
@@ -152,7 +158,91 @@
   }
 }
 
+@media (max-width: $bigTablet) {
+  .cases__wrapper {
+    padding-bottom: 0;
 
+    &::after {
+    display: none;
+    }
+  }
+
+  .cases__item {
+    margin-bottom: 37px;
+    border-radius: 10px;
+
+    &:nth-child(1) {
+      order: -1;
+    }
+    &:nth-child(2) {
+      order: -1;
+    }
+    &:nth-child(3) {
+      order: -1;
+    }
+    &:nth-child(4) {
+      order: -1;
+    }
+    &:nth-child(6) {
+      order: -1;
+    }
+  }
+
+  .cases__frame.fr1 {
+    width: 413px;
+    height: 375px;
+  }
+
+  .cases__frame.fr2 {
+    width: 863px;
+    height: 375px;
+  }
+
+  .cases-frame__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .cases-frame__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .cases-frame__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(bottom, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.4));
+    font-family: RobotoLight, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    transition: .5s ease-in;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .cases-frame__description {
+      bottom: -100%;
+      pointer-events: none;
+      background: rgba(1, 1, 1, 0.6);
+    }
+
+    .cases-frame__link:hover ~ .cases-frame__description,
+    .cases-frame__link:focus ~ .cases-frame__description {
+      bottom: 0;
+    }
+  }
+
+  .cases-frame__name {
+    margin-bottom: 10px;
+  }
+}
 
 
 

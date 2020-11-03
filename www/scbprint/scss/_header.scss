@@ -1,10 +1,8 @@
 /*--------------header top--------------------*/
 
 .page__header {
-  //position: fixed;
   top: 0;
   left: 50%;
-  //transform: translateX(-50%);
   width: 100%;
   background: #ffffff;
   z-index: 10;
@@ -265,7 +263,7 @@
   }
 }
 
-@media (max-width: $bigMonitor) {
+@media (max-width: $middleMonitor) {
   .header__top .header__wrapper {
     height: 120px;
   }
@@ -275,7 +273,7 @@
     margin-right: 34.4px;
   }
 
-    .logo__img {
+  .logo__img {
     width: 206.4px;
     height: 64.8px;
   }
@@ -286,6 +284,7 @@
 
   .top-navigation__item {
     padding: 0 18.4px;
+
     &::after {
       width: 1.6px;
       height: 17.6px;
@@ -394,6 +393,7 @@
 
   .top-navigation__item {
     padding: 0 15.64px;
+
     &::after {
       width: 1.6px;
       height: 14.96px;
@@ -482,9 +482,219 @@
   }
 }
 
+@media (max-width: $bigTablet) {
 
+  .page__header {
+    position: static;
+  }
 
+  .header__top,
+  .header__bottom {
+    border-bottom: none;
+  }
 
+  .header__wrapper {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .header__top .header__wrapper {
+    height: auto;
+  }
+
+  .page__header .header__logo {
+    width: 100%;
+    height: auto;
+    margin-top: 157px;
+    margin-bottom: 320px;
+    margin-right: 0;
+  }
+
+  .logo__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__top-navigation {
+    position: absolute;
+    top: 544px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    align-self: center;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -22px;
+      width: 100%;
+      height: 41px;
+      background: url("../img/line-bottom-mobile.png") no-repeat center;
+      background-size: cover;
+      z-index: 2;
+    }
+
+    &::after {
+      top: auto;
+      bottom: -21px;
+    }
+  }
+
+  .top-navigation__list {
+    position: relative;
+    justify-content: space-around;
+    height: 117px;
+    margin-top: 0;
+    list-style: none;
+    z-index: 3;
+  }
+
+  .top-navigation__item {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: .2s ease-out;
+
+    &::after {
+      height: 27px;
+    }
+  }
+
+  .top-navigation__link {
+    font-size: 28.75px;
+    line-height: 35.27px;
+  }
+
+  .header__top .header-contacts {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 70px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1073px;
+      height: 41px;
+      background: url("../img/line-bottom-mobile.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .header-contacts__link {
+    position: relative;
+    padding-right: 130px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .header-contacts__link--call {
+    font-size: 88.79px;
+    line-height: 101px;
+    margin-top: 0;
+    margin-bottom: 10px; //?
+
+    &::after {
+      width: 71px;
+      height: 113px;
+      background-image: url('../img/link--call-mobile.png');
+    }
+  }
+
+  .header-contacts__link--whatsapp {
+    font-size: 66.7px;
+    line-height: 109px;
+
+    &::before {
+      bottom: 20px;
+      right: 140px;
+      width: 136px;
+      height: 36px;
+      font-size: 32px;
+    }
+
+    &::after {
+      top: 18px;
+      right: 0;
+      width: 80px;
+      height: 85px;
+      background-image: url('../img/link--whatsapp-mobile.png');
+    }
+  }
+
+  .header-contacts__link--write {
+    display: none;
+  }
+
+  /*--------------header bottom--------------------*/
+
+  .header__bottom .header__wrapper {
+    display: block;
+    height: auto;
+  }
+
+  .bottom-navigation__list {
+    display: block;
+    width: 100%;
+    margin-top: 42px;
+  }
+
+  .bottom-navigation__item {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .bottom-navigation__item:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .bottom-navigation__link {
+    font-family: RobotoLight, sans-serif;
+    font-size: 57.83px;
+    line-height: 36.14px;
+    text-decoration: none;
+    color: #1e1e1c;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  .header__social {
+    position: absolute;
+    top: 17px;
+    left: 106px;
+  }
+
+  .header-social__list {
+    width: 212px;
+    height: 60px;
+  }
+
+  .header-social__link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-social__link--fb {
+    background-size: auto 33px;
+  }
+
+  .header-social__link--map {
+    background-size: auto 40px;
+  }
+}
 
 
 

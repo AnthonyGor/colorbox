@@ -111,7 +111,7 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, m
   margin: 0 auto;
 }
 
-@media (max-width: $bigMonitor) {
+@media (max-width: $middleMonitor) {
   .wrapper {
     width: 1153px;
   }
@@ -131,6 +131,18 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, m
     margin-top: 17px;
     margin-bottom: 51px;
     font-size: 34px;
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .wrapper {
+    width: 863px;
+  }
+  .section-title {
+    margin-top: 60px;
+    margin-bottom: 105px;
+    font-size: 40px;
+    line-height: 30px;
   }
 }
 

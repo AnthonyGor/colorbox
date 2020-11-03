@@ -2,28 +2,31 @@
   var pageHeader = document.querySelector('.page__header');
   var introduction = document.querySelector('.introduction');
   var currentIntroductionMarginTop = parseInt(getComputedStyle(introduction).marginTop, 10);
-  var currentWindowWidth = window.screen.width;
+  var currentPageWidth = document.documentElement.clientWidth;
+
   var ResolutionWidth = {
-    'MIDDLE': 1850,
+    'BIG': 2099,
     'SMALL': 1400,
-    'MOBILE': 1080
-  }
+    'MOBILE': 1079
+  };
   var IntroductionMarginTopValue = {
     'BIG': 82,
-    'MIDDLE': 65.6,
-    'SMALL': 55.76
-  }
+    'MIDDLE': 55.6,
+    'SMALL': 49,
+    'MOBILE': 150
+  };
 
   window.addEventListener('resize', function () {
-    currentWindowWidth = window.screen.width;
+    currentPageWidth = document.documentElement.clientWidth;
 
-    if (currentWindowWidth > ResolutionWidth.MIDDLE) {
+    if (currentPageWidth > ResolutionWidth.BIG) {
       currentIntroductionMarginTop = IntroductionMarginTopValue.BIG;
-    } else if (currentWindowWidth <= ResolutionWidth.MIDDLE && currentWindowWidth > ResolutionWidth.SMALL) {
+    } else if (currentPageWidth <= ResolutionWidth.BIG && currentPageWidth > ResolutionWidth.SMALL) {
       currentIntroductionMarginTop = IntroductionMarginTopValue.MIDDLE;
-    } else if (currentWindowWidth <= ResolutionWidth.SMALL) {
+    } else if (currentPageWidth <= ResolutionWidth.SMALL && currentPageWidth > ResolutionWidth.MOBILE) {
       currentIntroductionMarginTop = IntroductionMarginTopValue.SMALL;
-    } else if (currentWindowWidth <= ResolutionWidth.MOBILE) {
+    } else if (currentPageWidth <= ResolutionWidth.MOBILE) {
+      currentIntroductionMarginTop = IntroductionMarginTopValue.MOBILE;
       unlockHeader();
     }
 
@@ -59,7 +62,9 @@
   };
 
   window.addEventListener('scroll', function () {
-    if (currentWindowWidth > ResolutionWidth.MOBILE) {
+
+    if (currentPageWidth > ResolutionWidth.MOBILE) {
+      console.log(currentPageWidth)
       checkWindowPosition(lockHeader, unlockHeader)
     }
   });

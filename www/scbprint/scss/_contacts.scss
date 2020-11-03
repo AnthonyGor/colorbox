@@ -50,7 +50,7 @@
   border: none;
 }
 
-@media (max-width: $bigMonitor) {
+@media (max-width: $middleMonitor) {
   .contacts {
     height: 864px;
   }
@@ -119,5 +119,62 @@
   .contacts__map {
     width: 595px;
     height: 359.5px;
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .contacts {
+    height: 1080px;
+  }
+
+  .contacts__title {
+    width: 100%;
+    margin-top: 82px;
+    margin-bottom: 50px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 660px;
+  }
+
+  .contacts__address {
+    width: 100%;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+  .address__company-name {
+    margin-bottom: 15px;
+    font-family: RobotoBold, sans-serif;
+    font-size: 25.51px;
+    line-height: 18px;
+  }
+
+  .address__description {
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-size: 19.84px;
+    line-height: 28.35px;
+  }
+
+  .address__link {
+    display: inline-block;
+    width: 100%;
+    font-family: RobotoBold, sans-serif;
+    font-size: 19.84px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .contacts__map {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 0 15px 5px rgba(1, 1, 1, 0.2);
   }
 }

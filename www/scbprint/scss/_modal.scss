@@ -4,20 +4,25 @@
   align-items: center;
   position: fixed;
   top: 0;
-  left: -100vw;
+  transform: scale(0);
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
-  transition: .4s ease-in-out;
-  z-index: 111111;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .6s ease-out;
 }
 
 .modal-window__overlay--open {
-  left: 0;
+  transform: scale(1);
+  opacity: 1;
 }
 
-.stop-scroll{
-  position: fixed;
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 17px;
 }
 
 .filter-blur {
@@ -57,6 +62,7 @@
     height: 24px;
     background: #000000;
   }
+
   &::after {
     transform: translate(-50%, -50%) rotate(45deg);
   }
@@ -143,6 +149,6 @@
 
   &:hover,
   &:focus {
- transform: scale(1.1);
+    transform: scale(1.1);
   }
 }

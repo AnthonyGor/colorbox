@@ -3,6 +3,7 @@
   border-top: 2px solid #dddddf;
   border-bottom: 2px solid #dddddf;
   background-color: #f8f8f8;
+  overflow: hidden;
 }
 
 .blog__wrapper {
@@ -10,6 +11,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 80px;
+  transform: translateX(150%);
+  transition: .6s ease-out;
+}
+
+.blog__wrapper--show {
+  transform: translateX(0);
 }
 
 .blog__subtitle {
@@ -103,7 +110,7 @@
   color: #6e7478;
 }
 
-@media (max-width: $bigMonitor) {
+@media (max-width: $middleMonitor) {
   .blog__container {
     min-height: 520px;
   }
@@ -228,6 +235,12 @@
   .blog-article__description {
     font-size: 12px;
     line-height: 120%;
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .blog {
+    display: none;
   }
 }
 

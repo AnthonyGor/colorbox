@@ -13,11 +13,14 @@
 
 <!--header-->
 <header class="page__header">
-
+	<!--header__top-->
 	<div class="header__top">
 		<div class="header__wrapper wrapper">
 			<div class="header__logo logo">
-				<img class="logo__img" src="./scbprint/img/logo.png" alt="логотип Color box">
+				<picture class="logo__picture">
+					<source srcset='./scbprint/img/logo-tablet.png' media='(max-width: 1080px)'>
+					<img class="logo__img" src="./scbprint/img/logo.png" alt="логотип Color box">
+				</picture>
 			</div>
 			<nav class="header__top-navigation top-navigation">
 				<ul class="top-navigation__list">
@@ -48,7 +51,8 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- / header__top-->
+	<!--header__bottom-->
 	<div class="header__bottom">
 		<div class="header__wrapper wrapper">
 			<nav class="header__bottom-navigation bottom-navigation">
@@ -91,12 +95,13 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- / header__bottom-->
 </header>
+<!-- / header-->
 
 <main class="page__main">
 
-	<!--	introduction-->
+	<!--introduction-->
 	<section class="introduction">
 		<div class="introduction__wrapper wrapper">
 			<h1 class="visually-hidden">COLOR BOX - рекламно-производственная компания</h1>
@@ -109,16 +114,18 @@
 			</p>
 		</div>
 	</section>
-	<!--	statistics-->
+	<!-- / introduction-->
+
+	<!--statistics-->
 	<section class="statistics">
 		<div class="statistics__wrapper wrapper">
 			<h2 class="visually-hidden">Статистика компании</h2>
 			<table class="statistics__table statistics-table">
 				<tr class="statistics-table__row">
-					<th class="statistics-table__th">1 687</th>
-					<th class="statistics-table__th">17</th>
-					<th class="statistics-table__th">87</th>
-					<th class="statistics-table__th">864</th>
+					<th class="statistics-table__th" id="statistics-number-1">1687</th>
+					<th class="statistics-table__th" id="statistics-number-2">17</th>
+					<th class="statistics-table__th" id="statistics-number-3">87</th>
+					<th class="statistics-table__th" id="statistics-number-4">864</th>
 				</tr>
 				<tr class="statistics-table__row">
 					<td class="statistics-table__td">Проекта <br class="statistics-table__br"> реализовано</td>
@@ -129,7 +136,9 @@
 			</table>
 		</div>
 	</section>
-	<!--	about-us-->
+	<!-- / statistics-->
+
+	<!--about-us-->
 	<section class="about-us">
 		<div class="about-us__wrapper wrapper">
 			<h2 class="visually-hidden">О нас</h2>
@@ -144,7 +153,10 @@
 			</p>
 		</div>
 	</section>
-	<!--	extras-->
+	<!-- / about-us-->
+
+
+	<!--extras-->
 	<section class="extras">
 		<div class="extras__wrapper wrapper">
 			<h2 class="visually-hidden">Дополнительные услуги</h2>
@@ -161,232 +173,237 @@
 			</ul>
 		</div>
 	</section>
+	<!-- / extras-->
+
+	<!--cases-->
 	<section class="cases">
 		<div class="cases__wrapper wrapper">
-			<h2 class="cases__title section-title">Кейсы</h2>
+			<h2 class="cases__title section-title">Портфолио</h2>
 
 			<ul class="cases__list">
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-1.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-2.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-3.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-4.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-5.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr2">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr2">
 							<img class="cases-frame__image" src="scbprint/img/case-6.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-7.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-8.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-9.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-10.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-11.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr2">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr2">
 							<img class="cases-frame__image" src="scbprint/img/case-12.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-13.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-14.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-15.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-16.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-17.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 				<li class="cases__item">
-					<figure class="cases__frame cases-frame fr1">
-						<a class="cases-frame__link" href="#">
+					<a class="cases__link" href="#">
+						<figure class="cases__frame cases-frame fr1">
 							<img class="cases-frame__image" src="scbprint/img/case-18.jpg" alt="Изображение работы">
-						</a>
-						<figcaption class="cases-frame__description">
-							<p class="cases-frame__name">Названние Компании</p>
-							<p class="cases-frame__date">2020</p>
-						</figcaption>
-					</figure>
+							<figcaption class="cases-frame__description">
+								<p class="cases-frame__name">Названние Компании</p>
+								<p class="cases-frame__date">2020</p>
+							</figcaption>
+						</figure>
+					</a>
 				</li>
 
 			</ul>
 		</div>
 	</section>
-	<!--	blog-->
+	<!-- / cases-->
+
+	<!--blog-->
 	<section class="blog">
 		<h2 class="blog__title section-title">Блог</h2>
 		<div class="blog__container">
@@ -441,7 +458,9 @@
 			</div>
 		</div>
 	</section>
-	<!--	clients-->
+	<!-- / blog-->
+
+	<!--clients-->
 	<section class="clients">
 		<div class="clients__wrapper wrapper">
 			<h2 class="clients__title section-title">Клиенты</h2>
@@ -483,7 +502,9 @@
 			</ul>
 		</div>
 	</section>
-	<!--	production-->
+	<!-- / clients-->
+
+	<!--production-->
 	<section class="production">
 		<h2 class="production__title section-title">Производство</h2>
 		<ul class="production__list slider">
@@ -521,7 +542,9 @@
 		<button class="slider__button slider__button--left" aria-label="кнопка слайдера влево"></button>
 		<button class="slider__button slider__button--right" aria-label="кнопка слайдера вправо"></button>
 	</section>
-	<!--	questions-->
+	<!-- / production-->
+
+	<!--questions-->
 	<section class="questions">
 		<div class="questions__wrapper wrapper">
 			<h3 class="questions__title">Есть вопросы - спрашивайте!</h3>
@@ -532,7 +555,9 @@
 			<button class="questions__button">Задать вопрос</button>
 		</div>
 	</section>
-	<!--	contacts-->
+	<!-- / questions-->
+
+	<!--contacts-->
 	<section class="contacts">
 		<div class="contacts__wrapper wrapper">
 			<h2 class="contacts__title section-title">Контакты</h2>
@@ -546,10 +571,15 @@
 			</div>
 		</div>
 	</section>
+	<!-- /	contacts-->
+
 </main>
-<div class="modal-window modal-window__overlay">
+
+<!--modal-window-->
+<section class="modal-window modal-window__overlay" role="dialog" aria-modal="true">
 	<div class="modal-window__wrapper">
-		<button class="modal-window__close-btn"></button>
+		<h2 class="visually-hidden">Задать вопрос</h2>
+		<button class="modal-window__close-btn" aria-label="Закрыть окно"></button>
 		<form class="modal-window__form ask-form" method="post" action="/scbprint/zayavka.php">
 
 			<label class="modal-window__label" for="name">Имя</label>
@@ -564,9 +594,13 @@
 			<button type="submit" class="modal-window__apply-btn">Отправить</button>
 		</form>
 	</div>
-</div>
-<script src="scbprint/js/header.js"></script>
+</section>
+<!-- / modal-window-->
+
+<script src="scbprint/js/header.js" defer></script>
 <script src="scbprint/js/portfolio.js"></script>
+<script src="scbprint/js/modal.js"></script>
+<script src="scbprint/js/statistics.js"></script>
 <script src="scbprint/js/script.js"></script>
 </body>
 </html>

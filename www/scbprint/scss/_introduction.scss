@@ -5,12 +5,12 @@
 
 .introduction__wrapper {
   position: relative;
-  height: 767px;
+  height: 685px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -100px;
+    top: -90px;
     left: -207px;
     width: 778px;
     height: 778px;
@@ -23,7 +23,7 @@
 
 .introduction__subtitle {
   position: absolute;
-  top: 300px;
+  top: 320px;
   left: 500px;
   font-family: ProximaNovaT-Thin, sans-serif;
   font-size: 63.75px;
@@ -38,7 +38,7 @@
 
 .introduction__description {
   position: absolute;
-  top: 470px;
+  top: 484px;
   left: 615px;
   width: 575px;
   font-family: MyriadProLight, sans-serif;
@@ -48,7 +48,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     right: -250px;
     width: 278px;
     height: 105px;
@@ -59,16 +59,16 @@
   }
 }
 
-@media (max-width: $bigMonitor) {
+@media (max-width: $middleMonitor) {
   .introduction {
-    margin-top: 65.6px;
+    margin-top: 55.6px;
   }
 
   .introduction__wrapper {
-    height: 613.6px;
+    height: 548px;
 
     &::before {
-      top: -80px;
+      top: -72px;
       left: -165.6px;
       width: 622.4px;
       height: 622.4px;
@@ -76,7 +76,7 @@
   }
 
   .introduction__subtitle {
-    top: 240px;
+    top: 256px;
     left: 400px;
     font-size: 51px;
     line-height: 33.15px;
@@ -88,14 +88,13 @@
   }
 
   .introduction__description {
-    top: 376px;
+    top: 387.2px;
     left: 492px;
     width: 460px;
     font-size: 24.71px;
     line-height: 28.37px;
 
     &::after {
-      bottom: -16px;
       right: -200px;
       width: 222.4px;
       height: 84px;
@@ -105,14 +104,14 @@
 
 @media (max-width: $smallMonitor) {
   .introduction {
-    margin-top: 55.76px;
+    margin-top: 49px;
   }
 
   .introduction__wrapper {
-    height: 521.56px;
+    height: 465.8px;
 
     &::before {
-      top: -68px;
+      top: -61.2px;
       left: -140.76px;
       width: 529.04px;
       height: 529.04px;
@@ -120,7 +119,7 @@
   }
 
   .introduction__subtitle {
-    top: 204px;
+    top: 217.6px;
     left: 340px;
     font-size: 43.35px;
     line-height: 27.17px;
@@ -132,17 +131,62 @@
   }
 
   .introduction__description {
-    top: 319px;
+    top: 329.12px;
     left: 418.2px;
     width: 391px;
     font-size: 21px;
     line-height: 24.1px;
 
     &::after {
-      bottom: -13.6px;
       right: -170px;
       width: 189px;
       height: 71.4px;
+    }
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .introduction {
+    margin-top: 150px;
+  }
+
+  .introduction__wrapper {
+    width: 100%;
+    height: 556px;
+
+    &::before {
+      top: -90px;
+      left: 20px;
+      width: 660px;
+      height: 659px;
+      background-image: url('../img/introduction-bg-desctop-mobile.png');
+    }
+  }
+
+  .introduction__subtitle {
+    top: 75px;
+    left: 580px;
+    font-size: 53.92px;
+    line-height: 35.05px;
+    letter-spacing: -2px;
+  }
+
+  .introduction__subtitle--span {
+    top: 60px;
+    left: 100px;
+  }
+
+  .introduction__description {
+    top: 225px;
+    left: 580px;
+    width: 475px;
+    font-family: MyriadProLight, sans-serif;
+    font-size: 26.12px;
+    line-height: 30px;
+    letter-spacing: -1px;
+
+    &::after {
+      display: none;
     }
   }
 }
