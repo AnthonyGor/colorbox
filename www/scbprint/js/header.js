@@ -7,13 +7,19 @@
   var ResolutionWidth = {
     'BIG': 2099,
     'SMALL': 1400,
-    'MOBILE': 1079
+    'MOBILE': 1080,
+    'TABLET': 1020,
+    'BIG_PHONE': 767,
+    'SMALL_PHONE': 374
   };
   var IntroductionMarginTopValue = {
     'BIG': 82,
     'MIDDLE': 55.6,
     'SMALL': 49,
-    'MOBILE': 150
+    'MOBILE': 142.5,
+    'TABLET': 99.75,
+    'BIG_PHONE': 48.8,
+    'SMALL_PHONE': 41.48
   };
 
   window.addEventListener('resize', function () {
@@ -25,8 +31,17 @@
       currentIntroductionMarginTop = IntroductionMarginTopValue.MIDDLE;
     } else if (currentPageWidth <= ResolutionWidth.SMALL && currentPageWidth > ResolutionWidth.MOBILE) {
       currentIntroductionMarginTop = IntroductionMarginTopValue.SMALL;
-    } else if (currentPageWidth <= ResolutionWidth.MOBILE) {
+    } else if (currentPageWidth <= ResolutionWidth.MOBILE && currentPageWidth > ResolutionWidth.TABLET) {
       currentIntroductionMarginTop = IntroductionMarginTopValue.MOBILE;
+      unlockHeader();
+    } else if (currentPageWidth <= ResolutionWidth.TABLET && currentPageWidth > ResolutionWidth.BIG_PHONE) {
+      currentIntroductionMarginTop = IntroductionMarginTopValue.TABLET;
+      unlockHeader();
+    } else if (currentPageWidth <= ResolutionWidth.BIG_PHONE && currentPageWidth > ResolutionWidth.SMALL_PHONE) {
+      currentIntroductionMarginTop = IntroductionMarginTopValue.BIG_PHONE;
+      unlockHeader();
+    } else if (currentPageWidth <= ResolutionWidth.SMALL_PHONE) {
+      currentIntroductionMarginTop = IntroductionMarginTopValue.SMALL_PHONE;
       unlockHeader();
     }
 
@@ -64,7 +79,6 @@
   window.addEventListener('scroll', function () {
 
     if (currentPageWidth > ResolutionWidth.MOBILE) {
-      console.log(currentPageWidth)
       checkWindowPosition(lockHeader, unlockHeader)
     }
   });

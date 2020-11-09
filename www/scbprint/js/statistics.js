@@ -7,6 +7,7 @@
   var necessaryNumberThree = parseInt(elementNumberThree.textContent, 10);
   var elementNumberFour = document.getElementById('statistics-number-4');
   var necessaryNumberFour = parseInt(elementNumberFour.textContent, 10);
+  var pageSize = window.innerWidth;
   var isAlreadyWorked = false
 
   function outputNumber(number, element, time, step) {
@@ -26,7 +27,7 @@
 
 
   window.addEventListener('scroll', function () {
-    if (window.pageYOffset >= 220 && !isAlreadyWorked) {
+    if (pageSize >= 1080 && window.pageYOffset >= 220 && !isAlreadyWorked) {
       outputNumber(necessaryNumberOne, elementNumberOne, 3000, 7);
       outputNumber(necessaryNumberTwo, elementNumberTwo, 3000, 1);
       outputNumber(necessaryNumberThree, elementNumberThree, 3000, 1);

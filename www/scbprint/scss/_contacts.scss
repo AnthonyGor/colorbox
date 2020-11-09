@@ -124,13 +124,14 @@
 
 @media (max-width: $bigTablet) {
   .contacts {
-    height: 1080px;
+    height: 1026px;
   }
 
   .contacts__title {
     width: 100%;
-    margin-top: 82px;
-    margin-bottom: 50px;
+    margin-top: 77.9px;
+    margin-bottom: 75px;
+    font-size: 37.75px;
   }
 
   .contacts__wrapper {
@@ -139,27 +140,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 660px;
+    width: 665px;
   }
 
   .contacts__address {
     width: 100%;
-    margin-bottom: 42px;
+    margin-bottom: 39.9px;
     text-align: center;
   }
 
   .address__company-name {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-family: RobotoBold, sans-serif;
     font-size: 25.51px;
     line-height: 18px;
   }
 
   .address__description {
-    width: 360px;
+    width: 490px;
     margin: 0 auto;
     margin-bottom: 80px;
-    font-size: 19.84px;
+    font-size: 27px;
     line-height: 28.35px;
   }
 
@@ -167,14 +168,131 @@
     display: inline-block;
     width: 100%;
     font-family: RobotoBold, sans-serif;
-    font-size: 19.84px;
+    font-size: 20px;
     color: #000000;
     text-align: left;
   }
 
   .contacts__map {
     width: 100%;
-    height: 400px;
+    height: 380px;
     box-shadow: 0 0 15px 5px rgba(1, 1, 1, 0.2);
+  }
+}
+
+@media (max-width: $tablet) {
+  .contacts {
+    height: 718.2px;
+  }
+
+  .contacts__title {
+    margin-top: 54.53px;
+    margin-bottom: 59px;
+    font-size: 26.84px;
+  }
+
+  .contacts__wrapper {
+    width: 470px;
+  }
+
+  .contacts__address {
+    margin-bottom: 30px;
+  }
+
+  .address__company-name {
+    margin-bottom: 15px;
+    font-size: 21.33px;
+    line-height: 12.8px;
+  }
+
+  .address__description {
+    width: 342px;
+    margin-bottom: 58px;
+    font-size: 19.2px;
+    line-height: 20.16px;
+  }
+
+  .address__link {
+    font-size: 18px;
+  }
+
+  .contacts__map {
+    height: 287px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .contacts {
+    height: 600px;
+  }
+
+  .contacts__title {
+    margin-top: 26.7px;
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+
+  .contacts__wrapper {
+    width: 90%;
+  }
+
+  .contacts__address {
+    margin-bottom: 27.93px;
+  }
+
+  .address__company-name {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 70%;
+  }
+
+  .address__description {
+    width: 342px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .address__link {
+    font-size: 14px;
+  }
+
+  .contacts__map {
+    height: 300px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .contacts {
+    height: 510px;
+  }
+
+  .contacts__title {
+    margin-top: 22.69px;
+    margin-bottom: 29.75px;
+    font-size: 17px;
+  }
+
+  .contacts__address {
+    margin-bottom: 23.74px;
+  }
+
+  .address__company-name {
+    margin-bottom: 10.2px;
+    font-size: 11.9px;
+  }
+
+  .address__description {
+    width: 290.7px;
+    margin-bottom: 34px;
+    font-size: 13.6px;
+  }
+
+  .address__link {
+    font-size: 11.9px;
+  }
+
+  .contacts__map {
+    height: 255px;
   }
 }

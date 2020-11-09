@@ -55,6 +55,10 @@
   line-height: 21px;
 }
 
+.about-us__description--mobile {
+  display: none;
+}
+
 @media (max-width: $middleMonitor) {
   .about-us__wrapper {
     padding-top: 72px;
@@ -134,11 +138,11 @@
 @media (max-width: $bigTablet) {
   .about-us__wrapper {
     width: 100%;
-    padding-top: 70px;
+    padding-top: 65px;
 
     &::after {
-      width: 449px;
-      height: 459px;
+      width: 426.5px;
+      height: 436px;
       background-image: url('../img/colorful-cat--mobile.png');
     }
   }
@@ -146,16 +150,17 @@
   .about-us__subtitle {
     position: relative;
     top: 0;
-    width: 605px;
-    height: 150px;
-    max-height: 150px;
-    padding-top: 28px;
-    padding-left: 43px;
-    font-size: 53px;
+    width: 574.75px;
+    height: 142.5px;
+    max-height: 142.5px;
+    padding-top: 26.6px;
+    padding-left: 40.85px;
+    font-size: 50.35px;
     line-height: 70%;
+    word-spacing: 1.2px;
 
     &::after {
-      width: 570px;
+      width: 541.5px;
       height: 60px;
     }
   }
@@ -163,12 +168,135 @@
   .about-us__description {
     position: relative;
     top: -60px;
-    left: 35px;
-    width: 590px;
-    height: 220px;
-    max-height: 267px;
-    padding: 67px 75px 13px 37px;
-    font-size: 20px;
-    line-height: 19px;
+    left: 33.25px;
+    width: 580px;
+    height: 210px;
+    max-height: 217px;
+    padding: 70px 0 0 15px;
+    font-family: MyriadProLight, sans-serif;
+    font-size: 28.5px;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  .about-us__description--desktop {
+    display: none;
+  }
+
+  .about-us__description--mobile {
+    display: block;
+  }
+}
+
+@media (max-width: $tablet) {
+  .about-us__wrapper {
+    padding-top: 51.2px;
+
+    &::after {
+      width: 324.4px;
+      height: 335.72px;
+    }
+  }
+
+  .about-us__subtitle {
+    width: 431px;
+    height: 107px;
+    max-height: 109.72px;
+    padding-top: 20.48px;
+    padding-left: 27px;
+    font-size: 38.76px;
+
+    &::after {
+      width: 405px;
+      height: 44px;
+    }
+  }
+
+  .about-us__description {
+    position: relative;
+    top: -44px;
+    left: 25.59px;
+    width: 421px;
+    height: 164px;
+    max-height: 167.09px;
+    padding: 48px 0 0 14px;
+    font-size: 20.5px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .about-us__wrapper {
+    padding-top: 25px;
+
+    &::after {
+      width: 159px;
+      height: 164.5px;
+      z-index: 100;
+    }
+  }
+
+  .about-us__subtitle {
+    width: 210px;
+    height: 53px;
+    max-height: 53.7px;
+    padding-top: 10px;
+    padding-left: 12px;
+    font-size: 19px;
+
+    &::after {
+      width: 198px;
+      height: 21px;
+    }
+  }
+
+  .about-us__description {
+    position: relative;
+    top: -21px;
+    left: 11.5px;
+    width: 211px;
+    height: 80px;
+    max-height: 81.8px;
+    padding: 25px 0 0 5px;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: -0.4px;
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .about-us__wrapper {
+    padding-top: 21.25px;
+
+    &::after {
+      width: 135.15px;
+      height: 139.82px;
+    }
+  }
+
+  .about-us__subtitle {
+    width: 178.5px;
+    height: 45.05px;
+    max-height: 45.64px;
+    padding-top: 8.5px;
+    padding-left: 10.2px;
+    font-size: 16.15px;
+
+    &::after {
+      width: 168.3px;
+      height: 17.85px;
+    }
+  }
+
+  .about-us__description {
+    top: -17.85px;
+    left: 9.77px;
+    width: 179.35px;
+    height: 68px;
+    max-height: 69.53px;
+    padding: 21.25px 0 0 4.25px;
+    font-size: 9.35px;
+    line-height: 10.2px;
+    letter-spacing: -0.34px;
   }
 }

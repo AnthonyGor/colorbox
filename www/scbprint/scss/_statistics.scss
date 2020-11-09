@@ -79,21 +79,93 @@
 
 @media (max-width: $bigTablet) {
   .statistics-table__th {
-    height: 124px;
-    font-size: 67.86px;
+    height: 117.8px;
+    font-size: 64.4px;
     line-height: 70%;
   }
 
   .statistics-table__td {
-    padding-top: 15px;
-    font-size: 18.65px;
-    line-height: 25.82px;
+    padding-top: 14.25px;
+    font-size: 17.7px;
+    line-height: 24.5px;
 
     &:first-child {
-      left: -40px;
+      left: -38px;
     }
     &:last-child {
-      right: -40px;
+      right: -38px;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .statistics__wrapper {
+    width: 650px;
+  }
+
+  .statistics-table__th {
+    height: 82.46px;
+    font-size: 57px;
+  }
+
+  .statistics-table__td {
+    padding-top: 9.97px;
+    font-size: 17px;
+    line-height: 20px;
+
+    &:first-child {
+      left: -20.6px;
+    }
+    &:last-child {
+      right: -28.6px;
+    }
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .statistics__wrapper {
+    width: 318.5px;
+  }
+
+  .statistics-table__th {
+    height: 40.4px;
+    font-size: 28px;
+  }
+
+  .statistics-table__td {
+    padding-top: 4.8px;
+    font-size: 8.33px;
+    line-height: 9.8px;
+
+    &:first-child {
+      left: -10px;
+    }
+    &:last-child {
+      right: -14px;
+    }
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .statistics__wrapper {
+    width: 270.7px;
+  }
+
+  .statistics-table__th {
+    height: 34.34px;
+    font-size: 23.8px;
+  }
+
+  .statistics-table__td {
+    padding-top: 4px;
+    font-size: 7px;
+    line-height: 8.33px;
+
+    &:first-child {
+      left: -8.5px;
+    }
+    &:last-child {
+      right: -11.9px;
     }
   }
 }

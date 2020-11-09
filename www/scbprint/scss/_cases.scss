@@ -163,39 +163,43 @@
     padding-bottom: 0;
 
     &::after {
-    display: none;
+      display: none;
     }
   }
 
   .cases__item {
-    margin-bottom: 37px;
+    margin-bottom: 35.15px;
     border-radius: 10px;
 
     &:nth-child(1) {
       order: -1;
     }
+
     &:nth-child(2) {
       order: -1;
     }
+
     &:nth-child(3) {
       order: -1;
     }
+
     &:nth-child(4) {
       order: -1;
     }
+
     &:nth-child(6) {
       order: -1;
     }
   }
 
   .cases__frame.fr1 {
-    width: 413px;
-    height: 375px;
+    width: 392.35px;
+    height: 356.25px;
   }
 
   .cases__frame.fr2 {
-    width: 863px;
-    height: 375px;
+    width: 819.85px;
+    height: 356.25px;
   }
 
   .cases-frame__image {
@@ -221,7 +225,7 @@
     height: 100%;
     background-image: linear-gradient(bottom, rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.4));
     font-family: RobotoLight, sans-serif;
-    font-size: 25px;
+    font-size: 23.75px;
     color: #ffffff;
     transition: .5s ease-in;
   }
@@ -240,14 +244,84 @@
   }
 
   .cases-frame__name {
-    margin-bottom: 10px;
+    margin-bottom: 9.5px;
   }
 }
 
+@media (max-width: $tablet) {
+  .cases__item {
+    margin-bottom: 24.6px;
+    border-radius: 7px;
+  }
 
+  .cases__frame.fr1 {
+    width: 295px;
+    height: 266px;
+  }
 
+  .cases__frame.fr2 {
+    width: 614px;
+    height: 281px;
+  }
 
+  .cases-frame__description {
+    font-size: 16.62px;
+  }
 
+  .cases-frame__name {
+    margin-bottom: 6.65px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .cases__item {
+    margin-bottom: 12px;
+    border-radius: 5px;
+  }
+
+  .cases__frame.fr1 {
+    width: 144px;
+    height: 130px;
+  }
+
+  .cases__frame.fr2 {
+    width: 300px;
+    height: 138px;
+  }
+
+  .cases-frame__description {
+    font-size: 8.14px;
+  }
+
+  .cases-frame__name {
+    margin-bottom: 3.2px;
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .cases__item {
+    margin-bottom: 10.2px;
+    border-radius: 4.25px;
+  }
+
+  .cases__frame.fr1 {
+    width: 122.4px;
+    height: 110.5px;
+  }
+
+  .cases__frame.fr2 {
+    width: 255px;
+    height: 117.3px;
+  }
+
+  .cases-frame__description {
+    font-size: 7px;
+  }
+
+  .cases-frame__name {
+    margin-bottom: 3px;
+  }
+}
 
 
 

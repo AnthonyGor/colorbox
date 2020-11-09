@@ -136,13 +136,48 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, m
 
 @media (max-width: $bigTablet) {
   .wrapper {
-    width: 863px;
+    width: 820px;
   }
   .section-title {
-    margin-top: 60px;
-    margin-bottom: 105px;
-    font-size: 40px;
-    line-height: 30px;
+    margin-top: 57px;
+    margin-bottom: 100px;
+    font-size: 39.69px;
+    line-height: 20.52px;
   }
 }
 
+@media (max-width: $tablet) {
+  .wrapper {
+    width: 615px;
+  }
+  .section-title {
+    margin-top: 39.9px;
+    margin-bottom: 75px;
+    font-size: 28.22px;
+    line-height: 14.59px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .wrapper {
+    width: 300px;
+  }
+  .section-title {
+    margin-top: 19.5px;
+    margin-bottom: 34.3px;
+    font-size: 20px;
+    line-height: 9.7px;
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .wrapper {
+    width: 255px;
+  }
+  .section-title {
+    margin-top: 16.5px;
+    margin-bottom: 29px;
+    font-size: 17px;
+    line-height: 8.2px;
+  }
+}

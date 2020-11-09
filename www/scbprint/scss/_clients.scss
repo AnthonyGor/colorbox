@@ -18,7 +18,7 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   list-style: none;
   opacity: 0;
@@ -85,15 +85,57 @@
   }
 
   .clients__title {
-    margin-bottom: 65px;
+    margin-bottom: 61.75px;
   }
 
   .clients__item {
-    width: 270px;
-    margin-bottom: 45px;
+    width: 50%;
+    margin-bottom: 42.75px;
 
     &:nth-child(12) {
       display: none;
     }
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .clients__image {
+   object-fit: cover;
+  }
+}
+
+@media (max-width: $tablet) {
+  .clients__title {
+    margin-bottom: 43.22px;
+  }
+
+  .clients__item {
+    margin-bottom: 29.92px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .clients__title {
+    margin-bottom: 21px;
+  }
+
+  .clients__item {
+    margin-bottom: 30px;
+  }
+
+  .clients__image {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .clients__title {
+    margin-bottom: 17.85px;
+  }
+
+  .clients__item {
+    margin-bottom: 25.5px;
   }
 }

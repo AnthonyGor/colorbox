@@ -506,8 +506,8 @@
   .page__header .header__logo {
     width: 100%;
     height: auto;
-    margin-top: 157px;
-    margin-bottom: 320px;
+    margin-top: 149px;
+    margin-bottom: 304px;
     margin-right: 0;
   }
 
@@ -518,7 +518,7 @@
 
   .header__top-navigation {
     position: absolute;
-    top: 544px;
+    top: 516px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -528,9 +528,9 @@
     &::after {
       content: "";
       position: absolute;
-      top: -22px;
+      top: -21px;
       width: 100%;
-      height: 41px;
+      height: 39px;
       background: url("../img/line-bottom-mobile.png") no-repeat center;
       background-size: cover;
       z-index: 2;
@@ -538,14 +538,14 @@
 
     &::after {
       top: auto;
-      bottom: -21px;
+      bottom: -20px;
     }
   }
 
   .top-navigation__list {
     position: relative;
     justify-content: space-around;
-    height: 117px;
+    height: 111px;
     margin-top: 0;
     list-style: none;
     z-index: 3;
@@ -561,20 +561,20 @@
     transition: .2s ease-out;
 
     &::after {
-      height: 27px;
+      height: 25.6px;
     }
   }
 
   .top-navigation__link {
-    font-size: 28.75px;
-    line-height: 35.27px;
+    font-size: 27.3px;
+    line-height: 33.5px;
   }
 
   .header__top .header-contacts {
     position: relative;
     width: 100%;
     margin-left: 0;
-    padding-bottom: 70px;
+    padding-bottom: 66.5px;
 
     &::before {
       content: "";
@@ -582,8 +582,8 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 1073px;
-      height: 41px;
+      width: 985px;
+      height: 39px;
       background: url("../img/line-bottom-mobile.png") no-repeat center;
       background-size: cover;
     }
@@ -591,41 +591,41 @@
 
   .header-contacts__link {
     position: relative;
-    padding-right: 130px;
+    padding-right: 123.5px;
     width: 100%;
     text-align: right;
   }
 
   .header-contacts__link--call {
-    font-size: 88.79px;
-    line-height: 101px;
+    font-size: 84.3px;
+    line-height: 96px;
     margin-top: 0;
-    margin-bottom: 10px; //?
+    margin-bottom: 9.5px;
 
     &::after {
-      width: 71px;
-      height: 113px;
+      width: 67.4px;
+      height: 107.3px;
       background-image: url('../img/link--call-mobile.png');
     }
   }
 
   .header-contacts__link--whatsapp {
-    font-size: 66.7px;
-    line-height: 109px;
+    font-size: 63.3px;
+    line-height: 103.5px;
 
     &::before {
-      bottom: 20px;
-      right: 140px;
-      width: 136px;
-      height: 36px;
-      font-size: 32px;
+      bottom: 19px;
+      right: 133px;
+      width: 129px;
+      height: 34.2px;
+      font-size: 30.4px;
     }
 
     &::after {
-      top: 18px;
+      top: 17px;
       right: 0;
-      width: 80px;
-      height: 85px;
+      width: 76px;
+      height: 80.7px;
       background-image: url('../img/link--whatsapp-mobile.png');
     }
   }
@@ -644,12 +644,12 @@
   .bottom-navigation__list {
     display: block;
     width: 100%;
-    margin-top: 42px;
+    margin-top: 40px;
   }
 
   .bottom-navigation__item {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 52.2px;
   }
 
   .bottom-navigation__item:last-child {
@@ -659,10 +659,10 @@
 
   .bottom-navigation__link {
     font-family: RobotoLight, sans-serif;
-    font-size: 57.83px;
-    line-height: 36.14px;
+    font-size: 55px;
+    line-height: 34.3px;
     text-decoration: none;
-    color: #1e1e1c;
+    color: #545454;
     text-align: center;
 
     &:hover,
@@ -673,31 +673,407 @@
 
   .header__social {
     position: absolute;
-    top: 17px;
-    left: 106px;
+    top: 18px;
+    left: 135px;
   }
 
   .header-social__list {
-    width: 212px;
-    height: 60px;
+    width: 329px;
+    height: 95px;
   }
 
   .header-social__link {
-    width: 60px;
-    height: 60px;
+    width: 95px;
+    height: 95px;
+  }
+
+  .header-social__link--inst {
+    background: url("../img/link-inst-mobile.png") no-repeat center;
+    background-size: auto;
   }
 
   .header-social__link--fb {
-    background-size: auto 33px;
+    background: url("../img/link-fb-mobile.png") no-repeat center;
+    background-size: auto;
   }
 
   .header-social__link--map {
-    background-size: auto 40px;
+    background: url("../img/link-map-mobile.png") no-repeat center;
+    background-size: auto;
   }
 }
 
+@media (max-width: $tablet) {
+  .page__header .header__logo {
+    margin-top: 124px;
+    margin-bottom: 212.8px;
+  }
 
+  .header__top-navigation {
+    top: 361.2px;
 
+    &::before,
+    &::after {
+      top: -14.7px;
+      height: 27.3px;
+    }
+
+    &::after {
+      top: auto;
+      bottom: -14px;
+    }
+  }
+
+  .top-navigation__list {
+    height: 77.7px;
+  }
+
+  .top-navigation__item {
+
+    &::after {
+      height: 17.92px;
+    }
+  }
+
+  .top-navigation__link {
+    font-size: 20.44px;
+    line-height: 25.08px;
+  }
+
+  .header__top .header-contacts {
+    padding-bottom: 60px;
+
+    &::before {
+      width: 689.5px;
+      height: 27.3px;
+    }
+  }
+
+  .header-contacts__link {
+    padding-right: 86.45px;
+  }
+
+  .header-contacts__link--call {
+    font-size: 59.01px;
+    line-height: 67.2px;
+    margin-bottom: 6.65px;
+
+    &::after {
+      width: 47.18px;
+      height: 75.11px;
+    }
+  }
+
+  .header-contacts__link--whatsapp {
+    font-size: 44.31px;
+    line-height: 72.45px;
+
+    &::before {
+      bottom: 13.3px;
+      right: 93.1px;
+      width: 90.3px;
+      height: 23.94px;
+      font-size: 21.28px;
+    }
+
+    &::after {
+      top: 11.9px;
+      width: 53.2px;
+      height: 56.49px;
+    }
+  }
+
+  /*--------------header bottom--------------------*/
+
+  .bottom-navigation__list {
+    margin-top: 28px;
+  }
+
+  .bottom-navigation__item {
+    margin-bottom: 36.54px;
+  }
+
+  .bottom-navigation__link {
+    font-size: 49.77px;
+    line-height: 25.7px;
+  }
+
+  .header__social {
+    top: 12px;
+    left: 85px;
+  }
+
+  .header-social__list {
+    width: 235px;
+    height: 68px;
+  }
+
+  .header-social__link {
+    width: 68px;
+    height: 68px;
+  }
+
+  .header-social__link--inst {
+    background-size: auto 36px;
+  }
+
+  .header-social__link--fb {
+    background-size: auto 36px;
+  }
+
+  .header-social__link--map {
+    background-size: auto 36px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .page__header .header__logo {
+    margin-top: 51px;
+    margin-bottom: 104px;
+  }
+
+  .header__top-navigation {
+    top: 177px;
+
+    &::before,
+    &::after {
+      top: -7px;
+      height: 13px;
+    }
+
+    &::after {
+      top: auto;
+      bottom: -7px;
+    }
+  }
+
+  .top-navigation__list {
+    height: 38px;
+  }
+
+  .top-navigation__item {
+
+    &::after {
+      height: 12px;
+    }
+  }
+
+  .top-navigation__link {
+    font-size: 11px;
+    line-height: 110%;
+  }
+
+  .header__top .header-contacts {
+    padding-bottom: 35px;
+
+    &::before {
+      width: 337.85px;
+      height: 13.37px;
+    }
+  }
+
+  .header-contacts__link {
+    padding-right: 42.3px;
+  }
+
+  .header-contacts__link--call {
+    font-size: 29px;
+    line-height: 33px;
+    margin-bottom: 3.3px;
+
+    &::after {
+      right: 10px;
+      width: 23px;
+      height: 36.8px;
+    }
+  }
+
+  .header-contacts__link--whatsapp {
+    font-size: 27.71px;
+    line-height: 35.5px;
+
+    &::before {
+      bottom: 5px;
+      right: 50px;
+      width: 44.24px;
+      height: 11.7px;
+      font-size: 11.5px;
+    }
+
+    &::after {
+      top: 5.8px;
+      right: 10px;
+      width: 26px;
+      height: 27.6px;
+    }
+  }
+
+  /*--------------header bottom--------------------*/
+
+  .bottom-navigation__list {
+    margin-top: 13.7px;
+  }
+
+  .bottom-navigation__item {
+    margin-bottom: 18px;
+  }
+
+  .bottom-navigation__link {
+    font-size: 18.8px;
+    line-height: 11.7px;
+  }
+
+  .header__social {
+    top: 5px;
+    left: 40px;
+  }
+
+  .header-social__list {
+    width: 115px;
+    height: 33px;
+  }
+
+  .header-social__link {
+    width: 33px;
+    height: 33px;
+  }
+
+  .header-social__link--inst {
+    background-size: auto 18px;
+  }
+
+  .header-social__link--fb {
+    background-size: auto 18px;
+  }
+
+  .header-social__link--map {
+    background-size: auto 18px;
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .page__header .header__logo {
+    margin-top: 43.35px;
+    margin-bottom: 88.4px;
+  }
+
+  .header__top-navigation {
+    top: 150.4px;
+
+    &::before,
+    &::after {
+      top: -6px;
+      height: 11.05px;
+    }
+
+    &::after {
+      top: auto;
+      bottom: -6px;
+    }
+  }
+
+  .top-navigation__list {
+    height: 32.3px;
+  }
+
+  .top-navigation__item {
+
+    &::after {
+      height: 10.2px;
+    }
+  }
+
+  .top-navigation__link {
+    font-size: 10.5px;
+  }
+
+  .header__top .header-contacts {
+    padding-bottom: 29.7px;
+
+    &::before {
+      width: 287px;
+      height: 11.36px;
+    }
+  }
+
+  .header-contacts__link {
+    padding-right: 36px;
+  }
+
+  .header-contacts__link--call {
+    font-size: 24.6px;
+    line-height: 28px;
+    margin-bottom: 2.8px;
+
+    &::after {
+      right: 8.5px;
+      width: 19.5px;
+      height: 31.2px;
+    }
+  }
+
+  .header-contacts__link--whatsapp {
+    font-size: 23.5px;
+    line-height: 30.17px;
+
+    &::before {
+      bottom: 4.25px;
+      right: 42.5px;
+      width: 37.6px;
+      height: 10px;
+      font-size: 10px;
+    }
+
+    &::after {
+      top: 5px;
+      right: 8.5px;
+      width: 22px;
+      height: 23.4px;
+    }
+  }
+
+  /*--------------header bottom--------------------*/
+
+  .bottom-navigation__list {
+    margin-top: 11.6px;
+  }
+
+  .bottom-navigation__item {
+    margin-bottom: 15.3px;
+  }
+
+  .bottom-navigation__link {
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .header__social {
+    top: 4.25px;
+    left: 34px;
+  }
+
+  .header-social__list {
+    width: 97.75px;
+    height: 28px;
+  }
+
+  .header-social__link {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-social__link--inst {
+    background-size: auto 15px;
+  }
+
+  .header-social__link--fb {
+    background-size: auto 15px;
+  }
+
+  .header-social__link--map {
+    background-size: auto 15px;
+  }
+}
 
 
 
