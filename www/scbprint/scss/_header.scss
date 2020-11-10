@@ -221,11 +221,12 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  transition: .2s ease-out;
+  transition: .2s ease-in-out;
 
   &:hover,
   &:focus {
-    background-color: #849c0c;
+    border: 1px solid #00d1e0;
+    background-color: #00d1e0;
     transform: scale(1.2);
   }
 }
@@ -233,7 +234,8 @@
 .header-social__link--inst {
   background-image: url("../img/inst-ico.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 55% 55%;
+  background-size: 60%;
 
   &:hover,
   &:focus {
@@ -245,6 +247,7 @@
   background-image: url("../img/f-ico.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 30%;
 
   &:hover,
   &:focus {
@@ -255,11 +258,12 @@
 .header-social__link--map {
   background-image: url("../img/log-ico.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 68%;
 
   &:hover,
   &:focus {
-    background-image: url("../img/log-ico-color.png");
+    background-image: url("../img/link-map-mobile.png");
+    background-size: 61%;
   }
 }
 
@@ -367,9 +371,6 @@
     width: 28.8px;
     height: 28.8px;
   }
-  .header-social__link--inst {
-    background-size: 65%;
-  }
 }
 
 @media (max-width: $smallMonitor) {
@@ -475,10 +476,6 @@
   .header-social__link {
     width: 24.48px;
     height: 24.48px;
-  }
-
-  .header-social__link--inst {
-    background-size: 65%;
   }
 }
 
