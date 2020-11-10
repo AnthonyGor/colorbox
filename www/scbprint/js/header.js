@@ -4,6 +4,9 @@
   var currentIntroductionMarginTop = parseInt(getComputedStyle(introduction).marginTop, 10);
   var currentPageWidth = document.documentElement.clientWidth;
 
+
+  /*position fixed and head height compensation start*/
+
   var ResolutionWidth = {
     'BIG': 2099,
     'SMALL': 1400,
@@ -61,7 +64,7 @@
   var headHeightCompensation = function () {
     var headerHeight = pageHeader.offsetHeight;
 
-      introduction.style.marginTop = headerHeight + currentIntroductionMarginTop + 'px';
+    introduction.style.marginTop = headerHeight + currentIntroductionMarginTop + 'px';
   };
 
   var unlockHeader = function () {
@@ -82,4 +85,47 @@
       checkWindowPosition(lockHeader, unlockHeader)
     }
   });
+  /*position fixed and head height compensation end*/
+
+  /*smooth scroll to the anchor*/
+
+  var pageHeaderHeight = pageHeader.offsetHeight;
+
+  if (currentPageWidth <= ResolutionWidth.MOBILE) {
+    pageHeaderHeight = 30;
+  }
+
+  window.addEventListener('resize', function () {
+    pageHeaderHeight = pageHeader.offsetHeight;
+    if (currentPageWidth <= ResolutionWidth.MOBILE) {
+      pageHeaderHeight = 30;
+    }
+  });
+
+  var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+    V = 0.5;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+  for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function (e) { //по клику на ссылку
+      e.preventDefault(); //отменяем стандартное поведение
+      var w = window.pageYOffset,  // производим прокрутка прокрутка
+        hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+      t = document.querySelector(hash).getBoundingClientRect().top - pageHeaderHeight,  // отступ от окна браузера до id
+        start = null;
+      requestAnimationFrame(step);
+      requestAnimationFrame(step);
+
+      function step(time) {
+        if (start === null) start = time;
+        var progress = time - start,
+          r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
+        window.scrollTo(0, r);
+        if (r != w + t) {
+          requestAnimationFrame(step)
+        } else {
+          location.hash = hash  // URL с хэшем
+        }
+      }
+    }, false);
+  }
+
 }());
