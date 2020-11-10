@@ -1,0 +1,183 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../font/Roboto-Black.ttf") format("truetype"),
+  url("../font/Roboto-Black.eot") format("embedded-opentype"),
+  url("../font/Roboto-Black.woff") format("woff"),
+  url("../font/Roboto-Black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../font/RobotoMedium.ttf") format("truetype"),
+  url("../font/RobotoMedium.eot") format("embedded-opentype"),
+  url("../font/RobotoMedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../font/RobotoRegular.ttf") format("truetype"),
+  url("../font/RobotoRegular.eot") format("embedded-opentype"),
+  url("../font/RobotoRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url("../font/RobotoLight.ttf") format("truetype"),
+  url("../font/RobotoLight.eot") format("embedded-opentype"),
+  url("../font/RobotoLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../font/roboto-bold.ttf") format("truetype"),
+  url("../font/roboto-bold.eot") format("embedded-opentype"),
+  url("../font/roboto-bold.woff") format("woff"),
+  url("../font/roboto-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: ProximaNovaT-Thin;
+  src: url("../font/ProximaNovaT-Thin.ttf") format("truetype"),
+  url("../font/ProximaNovaT-Thin.eot") format("embedded-opentype"),
+  url("../font/ProximaNovaT-Thin.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: MyriadProLight;
+  src: url("../font/Myriad-Pro-Light_31642.ttf") format("truetype"),
+  url("../font/MyriadPro Light.otf") format("OpenType");
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+html, body {
+  background-color: #ffffff;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, main, img, input, label, form, strong, b, span, a, strong, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+
+  &::before {
+    box-sizing: border-box;
+  }
+
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+.section-title {
+  margin-top: 25px;
+  margin-bottom: 75px;
+  font-family: RobotoLight, sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 1441px;
+  margin: 0 auto;
+}
+
+@media (max-width: $middleMonitor) {
+  .wrapper {
+    width: 1153px;
+  }
+  .section-title {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: $smallMonitor) {
+  .wrapper {
+    width: 980.05px;
+  }
+  .section-title {
+    margin-top: 17px;
+    margin-bottom: 51px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .wrapper {
+    width: 820px;
+  }
+  .section-title {
+    margin-top: 57px;
+    margin-bottom: 100px;
+    font-size: 39.69px;
+    line-height: 20.52px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .wrapper {
+    width: 615px;
+  }
+  .section-title {
+    margin-top: 39.9px;
+    margin-bottom: 75px;
+    font-size: 28.22px;
+    line-height: 14.59px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .wrapper {
+    width: 300px;
+  }
+  .section-title {
+    margin-top: 19.5px;
+    margin-bottom: 34.3px;
+    font-size: 20px;
+    line-height: 9.7px;
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .wrapper {
+    width: 255px;
+  }
+  .section-title {
+    margin-top: 16.5px;
+    margin-bottom: 29px;
+    font-size: 17px;
+    line-height: 8.2px;
+  }
+}

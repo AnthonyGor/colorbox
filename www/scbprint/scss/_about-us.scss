@@ -1,0 +1,302 @@
+.about-us__wrapper {
+  position: relative;
+  padding-top: 90px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 524px;
+    height: 539px;
+    background-image: url('../img/colorful-cat.png');
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.about-us__subtitle {
+  position: relative;
+  top: -4px;
+  width: 834px;
+  height: 187px;
+  max-height: 187px;
+  padding-top: 36px;
+  padding-left: 139px;
+  background-color: #00d3e1;
+  font-family: ProximaNovaT-Thin, sans-serif;
+  font-size: 76px;
+  line-height: 50px;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 700px;
+    height: 70px;
+    background: #00aee1;
+  }
+}
+
+.about-us__description {
+  position: relative;
+  top: -74px;
+  left: 134px;
+  width: 732px;
+  height: 267px;
+  max-height: 267px;
+  padding: 90px 93px 15px 47px;
+  background: #c8d5ff;
+  font-size: 22px;
+  line-height: 21px;
+}
+
+.about-us__description--mobile {
+  display: none;
+}
+
+@media (max-width: $middleMonitor) {
+  .about-us__wrapper {
+    padding-top: 72px;
+
+    &::after {
+      width: 419.2px;
+      height: 431.2px;
+    }
+  }
+
+  .about-us__subtitle {
+    top: -3.2px;
+    width: 667.2px;
+    height: 149.6px;
+    max-height: 149.6px;
+    padding-top: 28.8px;
+    padding-left: 111.2px;
+    font-size: 60.8px;
+    line-height: 40px;
+
+    &::after {
+      width: 560px;
+      height: 56px;
+    }
+  }
+
+  .about-us__description {
+    top: -59.2px;
+    left: 107.2px;
+    width: 585.6px;
+    height: 213.6px;
+    max-height: 213.6px;
+    padding: 72px 74.4px 12px 37.6px;
+    font-size: 17.6px;
+    line-height: 16.8px;
+  }
+}
+
+@media (max-width: $smallMonitor) {
+  .about-us__wrapper {
+    padding-top: 61.2px;
+
+    &::after {
+      width: 356.32px;
+      height: 366.52px;
+    }
+  }
+
+  .about-us__subtitle {
+    top: -2.72px;
+    width: 567.12px;
+    height: 127.16px;
+    max-height: 127.16px;
+    padding-top: 24.48px;
+    padding-left: 94.52px;
+    font-size: 51.68px;
+    line-height: 34px;
+
+    &::after {
+      width: 476px;
+      height: 47.6px;
+    }
+  }
+
+  .about-us__description {
+    top: -50.32px;
+    left: 91.12px;
+    width: 497.76px;
+    height: 181.56px;
+    max-height: 181.56px;
+    padding: 61.2px 63.24px 10.2px 31.96px;
+    font-size: 14.96px;
+    line-height: 14.28px;
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .about-us__wrapper {
+    width: 100%;
+    padding-top: 65px;
+
+    &::after {
+      width: 426.5px;
+      height: 436px;
+      background-image: url('../img/colorful-cat--mobile.png');
+    }
+  }
+
+  .about-us__subtitle {
+    position: relative;
+    top: 0;
+    width: 574.75px;
+    height: 142.5px;
+    max-height: 142.5px;
+    padding-top: 26.6px;
+    padding-left: 40.85px;
+    font-size: 50.35px;
+    line-height: 70%;
+    word-spacing: 1.2px;
+
+    &::after {
+      width: 541.5px;
+      height: 60px;
+    }
+  }
+
+  .about-us__description {
+    position: relative;
+    top: -60px;
+    left: 33.25px;
+    width: 580px;
+    height: 210px;
+    max-height: 217px;
+    padding: 70px 0 0 15px;
+    font-family: MyriadProLight, sans-serif;
+    font-size: 28.5px;
+    line-height: 32px;
+    white-space: nowrap;
+  }
+
+  .about-us__description--desktop {
+    display: none;
+  }
+
+  .about-us__description--mobile {
+    display: block;
+  }
+}
+
+@media (max-width: $tablet) {
+  .about-us__wrapper {
+    padding-top: 51.2px;
+
+    &::after {
+      width: 324.4px;
+      height: 335.72px;
+    }
+  }
+
+  .about-us__subtitle {
+    width: 431px;
+    height: 107px;
+    max-height: 109.72px;
+    padding-top: 20.48px;
+    padding-left: 27px;
+    font-size: 38.76px;
+
+    &::after {
+      width: 405px;
+      height: 44px;
+    }
+  }
+
+  .about-us__description {
+    position: relative;
+    top: -44px;
+    left: 25.59px;
+    width: 421px;
+    height: 164px;
+    max-height: 167.09px;
+    padding: 48px 0 0 14px;
+    font-size: 20.5px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .about-us__wrapper {
+    padding-top: 25px;
+
+    &::after {
+      width: 159px;
+      height: 164.5px;
+      z-index: 100;
+    }
+  }
+
+  .about-us__subtitle {
+    width: 210px;
+    height: 53px;
+    max-height: 53.7px;
+    padding-top: 10px;
+    padding-left: 12px;
+    font-size: 19px;
+
+    &::after {
+      width: 198px;
+      height: 21px;
+    }
+  }
+
+  .about-us__description {
+    position: relative;
+    top: -21px;
+    left: 11.5px;
+    width: 211px;
+    height: 80px;
+    max-height: 81.8px;
+    padding: 25px 0 0 5px;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: -0.4px;
+  }
+}
+
+@media (max-width: $smallPhone) {
+  .about-us__wrapper {
+    padding-top: 21.25px;
+
+    &::after {
+      width: 135.15px;
+      height: 139.82px;
+    }
+  }
+
+  .about-us__subtitle {
+    width: 178.5px;
+    height: 45.05px;
+    max-height: 45.64px;
+    padding-top: 8.5px;
+    padding-left: 10.2px;
+    font-size: 16.15px;
+
+    &::after {
+      width: 168.3px;
+      height: 17.85px;
+    }
+  }
+
+  .about-us__description {
+    top: -17.85px;
+    left: 9.77px;
+    width: 179.35px;
+    height: 68px;
+    max-height: 69.53px;
+    padding: 21.25px 0 0 4.25px;
+    font-size: 9.35px;
+    line-height: 10.2px;
+    letter-spacing: -0.34px;
+  }
+}

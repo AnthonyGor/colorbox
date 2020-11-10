@@ -1,0 +1,262 @@
+.blog__container {
+  min-height: 650px;
+  border-top: 2px solid #dddddf;
+  border-bottom: 2px solid #dddddf;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.blog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  transform: translateX(150%);
+  transition: .6s ease-out;
+}
+
+.blog__wrapper--show {
+  transform: translateX(0);
+}
+
+.blog__subtitle {
+  font-family: RobotoBold, sans-serif;
+  font-size: 21.48px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #504e53;
+}
+
+.blog__link-to-all-articles {
+  font-size: 17px;
+  text-decoration: none;
+  color: #6d9100;
+}
+
+.blog__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 22px;
+  list-style: none;
+}
+
+.blog__article {
+  position: relative;
+  width: 455px;
+  height: 457px;
+  padding-top: 278px;
+  padding-left: 32px;
+  border: 2px solid #e7e7e7;
+  background-color: #ffffff;
+}
+
+.blog-article__link {
+  text-decoration: none;
+}
+
+.blog-article__flag {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 21px;
+  background-color: #7a9d00;
+  font-family: RobotoBold, sans-serif;
+  text-transform: uppercase;
+  font-size: 15.15px;
+  line-height: 12.84px;
+  color: #ffffff;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.blog-article__image {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 455px;
+  height: 255px;
+  object-fit: cover;
+}
+
+.blog-article__date {
+  margin-bottom: 23px;
+  font-family: RobotoBold, sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  color: #6e7478;
+}
+
+.blog-article__title {
+  margin-bottom: 23px;
+  font-family: RobotoBold, sans-serif;
+  font-size: 17.69px;
+  line-height: 17.69px;
+  color: #504e53;
+}
+
+.blog__item:nth-child(2) .blog-article__title {
+  margin-bottom: 8px;
+}
+
+.blog-article__description {
+  font-family: Roboto, sans-serif;
+  font-size: 15.16px;
+  line-height: 25.27px;
+  color: #6e7478;
+}
+
+@media (max-width: $middleMonitor) {
+  .blog__container {
+    min-height: 520px;
+  }
+
+  .blog__wrapper {
+    padding-top: 64px;
+  }
+
+  .blog__subtitle {
+    font-size: 17.18px;
+    line-height: 10.4px;
+  }
+
+  .blog__link-to-all-articles {
+    font-size: 13.6px;
+  }
+
+  .blog__list {
+    margin-top: 17.6px;
+  }
+
+  .blog__article {
+    width: 364px;
+    height: 365.6px;
+    padding-top: 222.4px;
+    padding-left: 25.6px;
+  }
+
+  .blog-article__flag {
+    left: 19.2px;
+    width: 80px;
+    height: 16.8px;
+    font-size: 12.12px;
+    line-height: 10.27px;
+  }
+
+  .blog-article__image {
+    left: -1.6px;
+    width: 364px;
+    height: 204px;
+  }
+
+  .blog-article__date {
+    margin-bottom: 18.4px;
+    font-size: 13.6px;
+  }
+
+  .blog-article__title {
+    margin-bottom: 18.4px;
+    font-size: 14.15px;
+    line-height: 14.15px;
+  }
+
+  .blog__item:nth-child(2) .blog-article__title {
+    margin-bottom: 6.4px;
+  }
+
+  .blog-article__description {
+    font-size: 12.12px;
+    line-height: 20.21px;
+  }
+}
+
+@media (max-width: $smallMonitor) {
+  .blog__container {
+    min-height: 442px;
+  }
+
+  .blog__wrapper {
+    padding-top: 54.4px;
+  }
+
+  .blog__subtitle {
+    font-size: 14.6px;
+    line-height: 8.84px;
+  }
+
+  .blog__link-to-all-articles {
+    font-size: 11.56px;
+  }
+
+  .blog__list {
+    margin-top: 14.96px;
+  }
+
+  .blog__article {
+    width: 309.4px;
+    height: 310.76px;
+    padding-top: 190.74px;
+    padding-left: 21.76px;
+  }
+
+  .blog-article__flag {
+    left: 16.32px;
+    width: 68px;
+    height: 14.28px;
+    font-size: 10.3px;
+    line-height: 8.72px;
+  }
+
+  .blog-article__image {
+    left: -1.36px;
+    width: 309.4px;
+    height: 173.4px;
+  }
+
+  .blog-article__date {
+    margin-bottom: 15.64px;
+    font-size: 11.56px;
+  }
+
+  .blog-article__title {
+    margin-bottom: 12px;
+    font-size: 12.02px;
+    line-height: 12.02px;
+  }
+
+  .blog__item:nth-child(2) .blog-article__title {
+    margin-bottom: 4px;
+  }
+
+  .blog-article__description {
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: $bigTablet) {
+  .blog {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

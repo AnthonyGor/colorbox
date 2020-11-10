@@ -1,0 +1,154 @@
+.modal-window__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  transform: scale(0);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity .6s ease-out;
+}
+
+.modal-window__overlay--open {
+  transform: scale(1);
+  opacity: 1;
+}
+
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-right: 17px;
+}
+
+.filter-blur {
+  filter: blur(5px);
+}
+
+.modal-window__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+}
+
+.modal-window__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  transition: .2s ease;
+  cursor: pointer;
+  outline: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 2px;
+    height: 24px;
+    background: #000000;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.modal-window__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+}
+
+.modal-window__label {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-window__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid rgba(84, 84, 84, 0.2);
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  transition: .2s ease-out;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #01aff1;
+  }
+}
+
+.modal-window__input--textarea {
+  padding-top: 10px;
+  height: 100px;
+  resize: none;
+}
+
+.modal-window__apply-btn {
+  width: 100%;
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  background-color: #01aff1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  transition: .2s ease;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}

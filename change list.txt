@@ -1,0 +1,8 @@
+logo.png
+link--call.png
+link--whatsapp.png
+link--write.png
+introduction-bg-desctop.png
+introduction-sign.png
+colorful-cat.png
+extras-bg.png

@@ -1,0 +1,278 @@
+.production {
+  position: relative;
+  box-sizing: content-box;
+}
+
+.production__title {
+  margin-bottom: 70px;
+}
+
+.production__container {
+  margin-bottom: 110px;
+  position: relative;
+  overflow: hidden;
+}
+
+.production__list {
+  position: relative;
+  display: flex;
+  list-style: none;
+  box-sizing: content-box;
+  transition: .7s left ease-out;
+}
+
+.slider__item {
+  display: table-cell;
+  min-width: 470px;
+  height: 318px;
+  margin-right: 7px;
+}
+
+.production__link {
+  position: relative;
+  text-decoration: none;
+}
+
+.production__description {
+  position: absolute;
+  bottom: 46px;
+  left: 21px;
+  font-family: Roboto, sans-serif;
+  font-size: 16.4px;
+  color: #ffffff;
+}
+
+.production__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: rgba(1, 1, 1, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: .3s ease;
+
+  &:hover,
+  &:hover {
+    background: rgba(1, 1, 1, 0.9);
+    transform: translateY(-50%) scale(1.2);
+    opacity: 0.9;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 25px;
+    background: url("../img/white-arrow-21.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.slider__button--left {
+  left: 40px;
+}
+
+.slider__button--right {
+  right: 40px;
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@media (max-width: $middleMonitor) {
+  .production__title {
+    margin-bottom: 56px;
+  }
+
+  .production__container {
+    margin-bottom: 88px;
+  }
+
+  .slider__item {
+    min-width: 376px;
+    height: 254.4px;
+    margin-right: 6px;
+  }
+
+  .production__description {
+    bottom: 36.8px;
+    left: 16.8px;
+    font-size: 13.12px;
+  }
+
+  .slider__button {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      width: 40px;
+      height: 20px;
+    }
+  }
+
+  .slider__button--left {
+    left: 32px;
+  }
+
+  .slider__button--right {
+    right: 32px;
+  }
+}
+
+@media (max-width: $smallMonitor) {
+  .production__title {
+    margin-bottom: 47.6px;
+  }
+
+  .production__container {
+    margin-bottom: 74.8px;
+  }
+
+  .slider__item {
+    min-width: 319.6px;
+    height: 216.24px;
+    margin-right: 5.1px;
+  }
+
+  .production__description {
+    bottom: 31.28px;
+    left: 14.28px;
+    font-size: 11.15px;
+  }
+
+  .slider__button {
+    width: 34px;
+    height: 34px;
+
+    &::before {
+      width: 34px;
+      height: 17px;
+    }
+  }
+
+  .slider__button--left {
+    left: 27.2px;
+  }
+
+  .slider__button--right {
+    right: 27.2px;
+  }
+}
+
+@media (max-width: $bigTablet) {
+
+  .production__container {
+    margin-bottom: 76px;
+  }
+
+  .slider__item {
+    min-width: 356.25px;
+    height: 239.4px;
+    margin-right: 5.7px;
+  }
+
+  .production__description {
+    bottom: 38px;
+    left: 22.8px;
+    font-size: 12.35px;
+  }
+
+  .slider__button {
+    width: 47.5px;
+    height: 47.5px;
+
+    &::before {
+      width: 47.5px;
+      height: 23.75px;
+    }
+  }
+
+  .slider__button--left {
+    left: 19px;
+  }
+
+  .slider__button--right {
+    right: 19px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .production__container {
+    margin-bottom: 53.2px;
+  }
+
+  .slider__item {
+    min-width: 268px;
+    height: 180px;
+    margin-right: 4px;
+  }
+
+  .production__description {
+    bottom: 28px;
+    left: 20px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .production__container {
+    margin-bottom: 53.2px;
+  }
+
+  .slider__item {
+    min-width: 375px;
+    height: 249px;
+    margin-right: 4px;
+  }
+
+  .production__description {
+    bottom: 38px;
+    left: 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $bigPhone) {
+  .production__container {
+    margin-bottom: 45.22px;
+  }
+
+  .slider__item {
+    min-width: 320px;
+    height: 212px;
+  }
+
+  .production__description {
+    bottom: 32.3px;
+    left: 25.5px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
