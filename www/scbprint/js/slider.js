@@ -8,8 +8,8 @@
   var scrollRightWidth = sliderAllItem[sliderAllItem.length - 1].offsetWidth;
   var itemMarginRight = parseInt(window.getComputedStyle(sliderAllItem[0], null).getPropertyValue('margin-right'), 10);
   sliderTrack.style.position = 'relative';
-  // sliderTrack.style.left = (scrollRightWidth + itemMarginRight) * -1 + 'px';
   sliderTrack.style.left = 0;
+  sliderTrack.style.transition = '.7s left ease-out';
 
   var sliderInitiate = function () {
     sliderTrack.style.position = 'relative';
@@ -48,27 +48,29 @@
 
   /*moveRight function start*/
   var moveRight = () => {
-    sliderTrack.style.left = parseInt(sliderTrack.style.left) + (scrollRightWidth + itemMarginRight) + 'px';
 
     buttonRight.removeEventListener('click', moveRight); //cancel handler
+    sliderTrack.style.transition = 'none'; //cancel transition
 
-    function moveLastElementToStart() {
-      sliderTrack.style.left = 'auto';
-      itemCopy = sliderAllItem[sliderAllItem.length - 1].cloneNode(true);
+    /*move last element start*/
+    itemCopy = sliderAllItem[sliderAllItem.length - 1].cloneNode(true);
+    var theFirstChild = sliderTrack.firstChild;
+    sliderTrack.insertBefore(itemCopy, theFirstChild);
+    sliderTrack.style.left = (scrollRightWidth + itemMarginRight) * -1 + 'px';
+    /*move first element end*/
 
-      var theFirstChild = sliderTrack.firstChild;
-      sliderTrack.insertBefore(itemCopy, theFirstChild);
+    setTimeout(() => {
+      sliderTrack.style.transition = '.7s left ease-out';
+      sliderTrack.style.left = 0
+    }, 20);
 
+    function removeElement() {
       sliderAllItem[sliderAllItem.length - 1].remove();
-      setTimeout(() => {
-        sliderTrack.style.left = 0
-      }, 20);
-
       buttonRight.addEventListener('click', moveRight);
       isMoved = false;
     }
 
-    setTimeout(moveLastElementToStart, 700)
+    setTimeout(removeElement, 700)
   };
   /*moveRight function end*/
 
@@ -109,4 +111,9 @@
     if (!isMoved) touchStart(event, moveLeft, moveRight);
   });
   window.addEventListener('resize', sliderInitiate);
+
+  /*set interval*/
+
+  setInterval(moveLeft, 7000)
+
 }());
