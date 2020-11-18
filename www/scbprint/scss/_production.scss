@@ -18,11 +18,10 @@
   display: flex;
   list-style: none;
   box-sizing: content-box;
-  transition: .7s left ease-out;
+  //transition: .7s left ease-out;
 }
 
 .slider__item {
-  display: table-cell;
   min-width: 470px;
   height: 318px;
   margin-right: 7px;
